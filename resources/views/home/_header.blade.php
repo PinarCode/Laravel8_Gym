@@ -1,81 +1,127 @@
-<!-- header -->
-<header class="fixed-top header">
-    <!-- top header -->
-    <div class="top-header py-2 bg-white">
-        <div class="container">
-            <div class="row no-gutters">
-                <div class="col-lg-4 text-center text-lg-left">
-                    <a class="text-color mr-3" href="callto:+443003030266"><strong>CALL</strong> +44 300 303 0266</a>
-                    <ul class="list-inline d-inline">
-                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-facebook"></i></a></li>
-                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-twitter-alt"></i></a></li>
-                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-linkedin"></i></a></li>
-                        <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i class="ti-instagram"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-8 text-center text-lg-right">
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="notice.html">notice</a></li>
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="research.html">research</a></li>
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="scholarship.html">SCHOLARSHIP</a></li>
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#loginModal">login</a></li>
-                        <li class="list-inline-item"><a class="text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block" href="#" data-toggle="modal" data-target="#signupModal">register</a></li>
-                    </ul>
-                </div>
+<!-- Header ================================================== -->
+<header>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-3">
+                <a href="index.html" id="logo">
+                    <img src="{{ asset('assets') }}/img/logo.png" width="95" height="27" alt="" data-retina="true" class="logo_normal">
+                    <img src="{{ asset('assets') }}/img/logo_sticky.png" width="95" height="27" alt="" data-retina="true" class="logo_sticky">
+                </a>
             </div>
-        </div>
-    </div>
-    <!-- navbar -->
-    <div class="navigation w-100">
-        <div class="container">
-            <nav class="navbar navbar-expand-lg navbar-dark p-0">
-                <a class="navbar-brand" href="index.html"><img src="images/logo.png" alt="logo"></a>
-                <button class="navbar-toggler rounded-0" type="button" data-toggle="collapse" data-target="#navigation"
-                        aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse" id="navigation">
-                    <ul class="navbar-nav ml-auto text-center">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.html">Home</a>
+            <nav class="col-xs-9">
+                <ul id="access_top">
+                    <li><a href="#" class="search-overlay-menu-btn"><i class="icon-search-6"></i></a>
+                    </li>
+                    <li><a href="" data-toggle="modal" data-target="#login" class="hidden-xs">Login</a>
+                    </li>
+                    <li><a href="#" data-toggle="modal" data-target="#register" class="hidden-xs">Register</a>
+                    </li>
+                </ul>
+                <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
+                <div class="main-menu">
+                    <div id="header_menu">
+                        <img src="{{ asset('assets') }}/img/logo.png" width="95" height="27" alt="Lovefit" data-retina="true">
+                    </div>
+                    <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
+                    <ul>
+                        <li><a href="explore-1.html">Explore</a>
                         </li>
-                        <li class="nav-item @@about">
-                            <a class="nav-link" href="about.html">About</a>
+                        <li class="submenu">
+                            <a href="javascript:void(0);" class="show-submenu">Pages<i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="#0">Home versions</a>
+                                    <ul>
+                                        <li><a href="index.html">Home Video Bg</a>
+                                        </li>
+                                        <li><a href="index_2.html">Home Layer Slider</a>
+                                        </li>
+                                        <li><a href="index_3.html">Home Cookie Bar</a>
+                                        </li>
+                                        <li><a href="index_4.html">Home Pop Up</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="fitness-course-1.html">Workout page</a>
+                                </li>
+                                <li><a href="fitness-course-2.html">Workout page 2</a>
+                                </li>
+                                <li><a href="about.html">About Us</a>
+                                </li>
+                                <li><a href="subscribe-working.html">Subscribe working</a>
+                                </li>
+                                <li><a href="#0">Cart section</a>
+                                    <ul>
+                                        <li><a href="cart-page-1.html">Cart section 1</a>
+                                        </li>
+                                        <li><a href="cart-page-2.html">Cart section 2</a>
+                                        </li>
+                                        <li><a href="cart-page-3.html">Cart section 3</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="faq.html">Faq</a>
+                                </li>
+                                <li><a href="blog.html">Blog</a>
+                                </li>
+                                <li><a href="gallery.html">Gallery</a>
+                                </li>
+                                <li><a href="trainer-profile.html">Trainer profile</a>
+                                </li>
+                                <li><a href="contacts.html">Contacts</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item @@courses">
-                            <a class="nav-link" href="courses.html">COURSES</a>
+                        <li><a href="#0">Other elements<i class="icon-down-open-mini"></i></a>
+                            <ul>
+                                <li><a href="shortcodes.html">Shortcodes</a>
+                                </li>
+                                <li><a href="pricing-tables.html">Pricing tables</a>
+                                </li>
+                                <li><a href="coming_soon/index.html">Site launch</a>
+                                </li>
+                                <li><a href="icon_pack_1.html">Icon pack 1</a>
+                                </li>
+                                <li><a href="icon_pack_2.html">Icon pack 2</a>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="nav-item @@events">
-                            <a class="nav-link" href="events.html">EVENTS</a>
+                        <li><a href="#0">Purchase this template</a>
                         </li>
-                        <li class="nav-item @@blog">
-                            <a class="nav-link" href="blog.html">BLOG</a>
+                        <li><a href="#" data-toggle="modal" data-target="#login" class="visible-xs">Login</a>
                         </li>
-                        <li class="nav-item dropdown view">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                               aria-haspopup="true" aria-expanded="false">
-                                Pages
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="teacher.html">Teacher</a>
-                                <a class="dropdown-item" href="teacher-single.html">Teacher Single</a>
-                                <a class="dropdown-item" href="notice.html">Notice</a>
-                                <a class="dropdown-item" href="notice-single.html">Notice Details</a>
-                                <a class="dropdown-item" href="research.html">Research</a>
-                                <a class="dropdown-item" href="scholarship.html">Scholarship</a>
-                                <a class="dropdown-item" href="course-single.html">Course Details</a>
-                                <a class="dropdown-item" href="event-single.html">Event Details</a>
-                                <a class="dropdown-item" href="blog-single.html">Blog Details</a>
-                            </div>
-                        </li>
-                        <li class="nav-item @@contact">
-                            <a class="nav-link" href="contact.html">CONTACT</a>
+                        <li><a href="#" data-toggle="modal" data-target="#register" class="visible-xs">Register</a>
                         </li>
                     </ul>
                 </div>
+                <!-- End main-menu -->
             </nav>
         </div>
+        <!-- End row -->
     </div>
+    <!-- End container -->
 </header>
-<!-- /header -->
+<!-- End Header =============================================== -->
+<!-- SubHeader =============================================== -->
+<section class="header-video">
+    <div id="hero_video">
+        <div id="sub_content">
+            <div class="mobile_fix">
+                <h1>Fitness <strong>Videos</strong> Workout</h1>
+                <p>
+                    Fall in love with Fitness
+                </p>
+            </div>
+        </div>
+        <!-- End sub_content -->
+    </div>
+    <img src="{{ asset('assets') }}/img/video_fix.png" alt="" class="header-video--media" data-video-src="{{ asset('assets') }}/video/intro" data-teaser-source="{{ asset('assets') }}/video/intro" data-provider="" data-video-width="1920" data-video-height="960">
+    <div id="count" class="hidden-xs">
+        <ul>
+            <li><span class="number">653</span> Workout</li>
+            <li><span class="number">1246</span> People Served</li>
+            <li><span class="number">2343</span> Registered Users</li>
+        </ul>
+    </div>
+</section>
+<!-- End Header video -->
+<!-- End SubHeader ============================================ -->
