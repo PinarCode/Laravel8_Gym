@@ -4,18 +4,18 @@
         <div class="modal-content modal-popup">
             <a href="#" class="close-link"><i class="icon_close_alt2"></i></a>
             <form action="#" class="popup-form" id="myRegister">
-                <input type="text" class="form-control form-white" placeholder="Name">
-                <input type="text" class="form-control form-white" placeholder="Last Name">
+                <input type="text" class="form-control form-white" placeholder="Adı">
+                <input type="text" class="form-control form-white" placeholder="Soyadı">
                 <input type="email" class="form-control form-white" placeholder="Email">
-                <input type="text" class="form-control form-white" placeholder="Password">
+                <input type="text" class="form-control form-white" placeholder="Şifre">
                 <div class="checkbox-holder text-left">
                     <div class="checkbox">
                         <input type="checkbox" value="accept_2" id="check_2" name="check_2" />
-                        <label for="check_2"><span>I Agree to the <strong>Terms &amp; Conditions</strong></span>
+                        <label for="check_2"><span><strong>Şartlar & Koşullar'a</strong> Katılıyorum </span>
                         </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-submit">Register</button>
+                <button type="submit" class="btn btn-submit">Kaydol</button>
             </form>
         </div>
     </div>

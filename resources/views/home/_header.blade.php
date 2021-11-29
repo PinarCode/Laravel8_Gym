@@ -12,9 +12,9 @@
                 <ul id="access_top">
                     <li><a href="#" class="search-overlay-menu-btn"><i class="icon-search-6"></i></a>
                     </li>
-                    <li><a href="" data-toggle="modal" data-target="#login" class="hidden-xs">Login</a>
+                    <li><a href="" data-toggle="modal" data-target="#login" class="hidden-xs">Giriş</a>
                     </li>
-                    <li><a href="#" data-toggle="modal" data-target="#register" class="hidden-xs">Register</a>
+                    <li><a href="#" data-toggle="modal" data-target="#register" class="hidden-xs">Kayıt</a>
                     </li>
                 </ul>
                 <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="javascript:void(0);"><span>Menu mobile</span></a>
@@ -24,10 +24,10 @@
                     </div>
                     <a href="#" class="open_close" id="close_in"><i class="icon_close"></i></a>
                     <ul>
-                        <li><a href="explore-1.html">Explore</a>
+                        <li><a href="explore-1.html">Keşfet</a>
                         </li>
                         <li class="submenu">
-                            <a href="javascript:void(0);" class="show-submenu">Pages<i class="icon-down-open-mini"></i></a>
+                            <a href="javascript:void(0);" class="show-submenu">Sayfalar<i class="icon-down-open-mini"></i></a>
                             <ul>
                                 <li><a href="#0">Home versions</a>
                                     <ul>
@@ -71,7 +71,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <li><a href="#0">Other elements<i class="icon-down-open-mini"></i></a>
+                        <li><a href="#0">Diğer elementler<i class="icon-down-open-mini"></i></a>
                             <ul>
                                 <li><a href="shortcodes.html">Shortcodes</a>
                                 </li>
@@ -84,8 +84,6 @@
                                 <li><a href="icon_pack_2.html">Icon pack 2</a>
                                 </li>
                             </ul>
-                        </li>
-                        <li><a href="#0">Purchase this template</a>
                         </li>
                         <li><a href="#" data-toggle="modal" data-target="#login" class="visible-xs">Login</a>
                         </li>
@@ -106,9 +104,9 @@
     <div id="hero_video">
         <div id="sub_content">
             <div class="mobile_fix">
-                <h1>Fitness <strong>Videos</strong> Workout</h1>
+                <h1>Fitness <strong>Videolar</strong> Egzersiz</h1>
                 <p>
-                    Fall in love with Fitness
+                    Spora Aşık Olun
                 </p>
             </div>
         </div>
@@ -117,9 +115,9 @@
     <img src="{{ asset('assets') }}/img/video_fix.png" alt="" class="header-video--media" data-video-src="{{ asset('assets') }}/video/intro" data-teaser-source="{{ asset('assets') }}/video/intro" data-provider="" data-video-width="1920" data-video-height="960">
     <div id="count" class="hidden-xs">
         <ul>
-            <li><span class="number">653</span> Workout</li>
-            <li><span class="number">1246</span> People Served</li>
-            <li><span class="number">2343</span> Registered Users</li>
+            <li><span class="number">653</span> Egzersiz</li>
+            <li><span class="number">1246</span> Hizmet Verilenler</li>
+            <li><span class="number">2343</span> Kayıtlı Kullanıcılar</li>
         </ul>
     </div>
 </section>

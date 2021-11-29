@@ -19,32 +19,32 @@
                 </div>
             </div>
             <div class="col-md-3 col-sm-6">
-                <h4>About</h4>
+                <h4>Hakkında</h4>
                 <ul>
-                    <li><a href="#">About us</a>
+                    <li><a href="#">Hakkımızda</a>
                     </li>
                     <li><a href="#">Blog</a>
                     </li>
-                    <li><a href="#">Login</a>
+                    <li><a href="#">Giriş</a>
                     </li>
-                    <li><a href="#">Register</a>
+                    <li><a href="#">Kaydol</a>
                     </li>
-                    <li><a href="#">Contact us</a>
+                    <li><a href="#">Bize Ulaşın</a>
                     </li>
                 </ul>
             </div>
             <div class="col-md-3 col-sm-6">
-                <h4>Discover</h4>
+                <h4>Keşfet</h4>
                 <ul>
-                    <li><a href="#">Explore</a>
+                    <li><a href="#">Keşfet</a>
                     </li>
-                    <li><a href="#">Terms and condition</a>
+                    <li><a href="#">Şartlar ve koşullar</a>
                     </li>
-                    <li><a href="#">Privacy</a>
+                    <li><a href="#">Gizlilik</a>
                     </li>
-                    <li><a href="#">Cookie Policy</a>
+                    <li><a href="#">Çerez politikası</a>
                     </li>
-                    <li><a href="#">Faq</a>
+                    <li><a href="#">Sss</a>
                     </li>
                 </ul>
             </div>
@@ -59,7 +59,7 @@
 <!-- End footer -->
 <div id="copy">
     <div class="container">
-        © LoveFit 2016 - All rights reserved.
+        © LoveFit 2021 - Tüm hakları saklıdır.
     </div>
 </div>
 <!-- End copy -->

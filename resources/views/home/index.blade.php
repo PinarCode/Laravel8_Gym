@@ -8,26 +8,26 @@
 @section('content')
     <section id="feat">
         <div class="container">
-            <h2 class="main_title"><em></em>How Lovefit works<span>Fall in love with Fitness</span></h2>
+            <h2 class="main_title"><em></em>Lovefit nasıl çalışır?<span>Sporu Hayatınıza Katın</span></h2>
             <p class="lead styled">
                 Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel lorem legendos.
             </p>
             <div class="row">
                 <div class="col-sm-4 wow fadeIn animated" data-wow-delay="0.2s">
                     <div class="box_feat" id="icon_2">
-                        <h3>Videos Workout</h3>
+                        <h3>Videolarla Egzersiz</h3>
                         <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel lorem legendos. </p>
                     </div>
                 </div>
                 <div class="col-sm-4 wow fadeIn animated" data-wow-delay="0.5s">
                     <div class="box_feat" id="icon_1">
-                        <h3>Expert Trainers</h3>
+                        <h3>Uzman Eğitmenler</h3>
                         <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel lorem legendos. </p>
                     </div>
                 </div>
                 <div class="col-sm-4 wow fadeIn animated" data-wow-delay="1s">
                     <div class="box_feat" id="icon_3">
-                        <h3>Play Everywhere</h3>
+                        <h3>Her Yerde Hareket</h3>
                         <p>Usu habeo equidem sanctus no. Suas summo id sed, erat erant oporteat cu pri. In eum omnes molestie. Sed ad debet scaevola, ne mel lorem legendos. </p>
                     </div>
                 </div>
@@ -40,18 +40,18 @@
 
     <div class="container_styled_1">
         <div class="container margin_60_35">
-            <h2 class="main_title"><em></em>Latest Workout Videos<span>Fall in love with Fitness</span></h2>
+            <h2 class="main_title"><em></em>Son Antrenman Videoları<span>Sporu Hayatınıza Katın</span></h2>
             <div id="filter_buttons">
-                <button data-toggle="portfilter" class="active" data-target="all">All</button>
+                <button data-toggle="portfilter" class="active" data-target="all">Hepsi</button>
                 <button data-toggle="portfilter" data-target="Yoga">Yoga</button>
-                <button data-toggle="portfilter" data-target="Strength">Strength</button>
-                <button data-toggle="portfilter" data-target="Cardio">Cardio</button>
+                <button data-toggle="portfilter" data-target="Strength">Güç</button>
+                <button data-toggle="portfilter" data-target="Cardio">Kardiyo</button>
                 <button data-toggle="portfilter" data-target="Pilates">Pilates</button>
             </div>
             <div class="row">
                 <div class="col-md-4" data-tag="Yoga">
                     <div class="course_container">
-                        <div class="ribbon top"><span>Top Sell</span>
+                        <div class="ribbon top"><span>En çok satan</span>
                         </div>
                         <figure>
                             <a href="fitness-course-1.html">
@@ -62,7 +62,7 @@
                         <div class="course_title">
                             <div class="type"><span>Yoga</span>
                             </div>
-                            <h3><a href="fitness-course-1.html">Yoga Fundamentals</a></h3>
+                            <h3><a href="fitness-course-1.html">Yoga Temelleri</a></h3>
                             <div class="info_2 clearfix"><span class="price">39.90<sup>$</sup></span><span class="users">450</span>
                             </div>
                         </div>
@@ -71,7 +71,7 @@
                 </div>
                 <div class="col-md-4" data-tag="Yoga">
                     <div class="course_container">
-                        <div class="ribbon top"><span>Top sell</span>
+                        <div class="ribbon top"><span>En çok satan</span>
                         </div>
                         <figure>
                             <a href="fitness-course-1.html">
@@ -82,7 +82,7 @@
                         <div class="course_title">
                             <div class="type"><span>Yoga</span>
                             </div>
-                            <h3><a href="fitness-course-1.html">Total Body Stretching </a></h3>
+                            <h3><a href="fitness-course-1.html">Vücut Germe </a></h3>
                             <div class="info_2 clearfix"><span class="price">39.90<sup>$</sup></span><span class="users">450</span>
                             </div>
                         </div>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="col-md-4" data-tag="Yoga">
                     <div class="course_container">
-                        <div class="ribbon"><span>Popular</span>
+                        <div class="ribbon"><span>Popüler</span>
                         </div>
                         <figure>
                             <a href="fitness-course-1.html">
@@ -102,7 +102,7 @@
                         <div class="course_title">
                             <div class="type"><span>Yoga</span>
                             </div>
-                            <h3><a href="fitness-course-1.html">Flexibility and Toning</a></h3>
+                            <h3><a href="fitness-course-1.html">Esneklik ve Tonlama</a></h3>
                             <div class="info_2 clearfix"><span class="price">39.90<sup>$</sup></span><span class="users">450</span>
                             </div>
                         </div>
@@ -111,7 +111,7 @@
                 </div>
                 <div class="col-md-4" data-tag="Strength">
                     <div class="course_container">
-                        <div class="ribbon"><span>Popular</span>
+                        <div class="ribbon"><span>Popüler</span>
                         </div>
                         <figure>
                             <a href="fitness-course-1.html">
@@ -120,9 +120,9 @@
                             </a>
                         </figure>
                         <div class="course_title">
-                            <div class="type"><span>Strength</span>
+                            <div class="type"><span>Güç</span>
                             </div>
-                            <h3><a href="fitness-course-1.html">Strength Upper Body</a></h3>
+                            <h3><a href="fitness-course-1.html">Güçlü Üst Gövde</a></h3>
                             <div class="info_2 clearfix"><span class="price">39.90<sup>$</sup></span><span class="users">450</span>
                             </div>
                         </div>
@@ -132,7 +132,7 @@
 
                 <div class="col-md-4" data-tag="Strength">
                     <div class="course_container">
-                        <div class="ribbon"><span>Popular</span>
+                        <div class="ribbon"><span>Popüler</span>
                         </div>
                         <figure>
                             <a href="#0">
@@ -141,9 +141,9 @@
                             </a>
                         </figure>
                         <div class="course_title">
-                            <div class="type"><span>Strength</span>
+                            <div class="type"><span>Güç</span>
                             </div>
-                            <h3><a href="#0">Fat Burning Butt and Thigh </a></h3>
+                            <h3><a href="#0">Yağ Yakıcı </a></h3>
                             <div class="info_2 clearfix"><span class="price">39.90<sup>$</sup></span><span class="users">450</span>
                             </div>
                         </div>
@@ -152,7 +152,7 @@
                 </div>
                 <div class="col-md-4" data-tag="Cardio">
                     <div class="course_container">
-                        <div class="ribbon"><span>Popular</span>
+                        <div class="ribbon"><span>Popüler</span>
                         </div>
                         <figure>
                             <a href="fitness-course-1.html">
@@ -161,9 +161,9 @@
                             </a>
                         </figure>
                         <div class="course_title">
-                            <div class="type"><span>Cardio</span>
+                            <div class="type"><span>Kardiyo</span>
                             </div>
-                            <h3><a href="fitness-course-1.html">1000 Calorie Workout Video</a></h3>
+                            <h3><a href="fitness-course-1.html">1000 Kalori Egzersiz Videosu</a></h3>
                             <div class="info_2 clearfix"><span class="price">39.90<sup>$</sup></span><span class="users">450</span>
                             </div>
                         </div>
@@ -179,9 +179,9 @@
                             </a>
                         </figure>
                         <div class="course_title">
-                            <div class="type"><span>Cardio</span>
+                            <div class="type"><span>Kardiyo</span>
                             </div>
-                            <h3><a href="fitness-course-1.html">Fat Burning Cardio</a></h3>
+                            <h3><a href="fitness-course-1.html">Yağ Yakıcı Kardiyo</a></h3>
                             <div class="info_2 clearfix"><span class="price">39.90<sup>$</sup></span><span class="users">450</span>
                             </div>
                         </div>
@@ -199,7 +199,7 @@
                         <div class="course_title">
                             <div class="type"><span>Pilates</span>
                             </div>
-                            <h3><a href="fitness-course-1.html">Lower Body Pilates</a></h3>
+                            <h3><a href="fitness-course-1.html">Alt Vücut Pilatesi</a></h3>
                             <div class="info_2 clearfix"><span class="price">39.90<sup>$</sup></span><span class="users">450</span>
                             </div>
                         </div>
@@ -220,12 +220,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h3>Available on all Devices</h3>
+                    <h3>Tüm Cihazlarda Kullanılabilir</h3>
                     <p class="lead">Lorem ipsum dolor sit amet, dolore deleniti appareat per no. In ius aliquam suavitate repudiare, pro an quidam inimicus, duo liber labitur repudiandae in.</p>
                     <p>
                     <p>Lorem ipsum dolor sit amet, dolore deleniti appareat per no. In ius aliquam suavitate repudiare, pro an quidam inimicus, duo liber labitur repudiandae in. Nec no tamquam delenit, sit equidem ornatus accommodare at, pro graeco debitis deterruisset no. Eam at veri oratio principes, sit ad vero ipsum affert.</p>
                     <div id="compatib">
-                        Compatible with Android/IOS
+                        Android/IOS ile uyumlu
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -240,7 +240,7 @@
     <section class="promo_full">
         <div class="promo_full_wp">
             <div>
-                <h3>What Clients say<span>Id tale utinam ius, an mei omnium recusabo iracundia.</span></h3>
+                <h3>Müşteriler ne diyor<span>Id tale utinam ius, an mei omnium recusabo iracundia.</span></h3>
                 <div class="container">
                     <div class="row">
                         <div class="col-md-8 col-md-offset-2">
@@ -305,11 +305,11 @@
         <div class="container margin_60">
             <div class="row">
                 <div class="col-md-10 col-md-offset-1 text-center">
-                    <h3>Subscribe to our Newsletter for latest news.</h3>
+                    <h3>En son haberler için Bültenimize abone olun.</h3>
                     <div id="message-newsletter"></div>
                     <form method="post" action="assets/newsletter.php" name="newsletter" id="newsletter" class="form-inline">
                         <input name="email_newsletter" id="email_newsletter" type="email" value="" placeholder="Your Email" class="form-control">
-                        <button id="submit-newsletter" class="btn_1"> Subscribe</button>
+                        <button id="submit-newsletter" class="btn_1"> Abone Ol</button>
                     </form>
                 </div>
             </div>
