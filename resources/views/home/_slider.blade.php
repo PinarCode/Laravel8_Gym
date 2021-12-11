@@ -185,7 +185,7 @@
                 <!-- SLIDE  -->
                 <li data-transition="slideup,slidedown,slideright,slideleft,fade,fadefromright,fadefromleft,fadefromtop,fadefrombottom" data-slotamount="7"  data-randomtransition="on" data-masterspeed="300"  data-saveperformance="off" >
                     <!-- MAIN IMAGE -->
-                    <img src="{{ asset('assets') }}/images/1920x1080.png"  alt="main-slider-2"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+                    <img src="{{ asset('assets') }}/images/1920.png"  alt="main-slider-2"  data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
                     <!-- LAYERS -->
                     <!-- LAYER NR. 1 -->
                     <div class="tp-caption lfl"

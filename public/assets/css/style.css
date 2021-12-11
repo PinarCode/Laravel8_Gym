@@ -3681,7 +3681,7 @@ blockquote cite {
 	padding:10px 4px;
 }
 .widget_area .widget_calendar td {
-	font-size:0.875em
+	font-size:0.875em;
 	padding:0;
 }
 .widget_area .widget_calendar .month_cur {

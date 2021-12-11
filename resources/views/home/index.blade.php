@@ -24,12 +24,12 @@
                                                     <div class="post_excerpt">Judo, Karate, Olympic Freestyle Wrestling and Thai Box are amongst the list of our classes</div>
                                                 </div>
                                                 <a href="#">
-                                                    <img alt="Martial Arts" src="{{ asset('assets') }}/images/400x400.png">
+                                                    <img alt="Martial Arts" src="{{ asset('assets') }}/images/400x400M.png">
                                                     <span class="sc1">
 																			<span class="sc2">
 																				<span class="sc3">
 																					<span class="sc4">
-																						<img alt="Martial Arts" src="{{ asset('assets') }}/images/400x400.png">
+																						<img alt="Martial Arts" src="{{ asset('assets') }}/images/400x400M.png">
 																					</span>
 																				</span>
 																			</span>
@@ -76,12 +76,12 @@
                                                     <div class="post_excerpt">Here are the basic guidelines, rules, and easy-to-follow workouts.</div>
                                                 </div>
                                                 <a href="#">
-                                                    <img alt="Weight Training" src="{{ asset('assets') }}/images/400x400.png">
+                                                    <img alt="Weight Training" src="{{ asset('assets') }}/images/400x400W.png">
                                                     <span class="sc1">
 																			<span class="sc2">
 																				<span class="sc3">
 																					<span class="sc4">
-																						<img alt="Weight Training" src="{{ asset('assets') }}/images/400x400.png">
+																						<img alt="Weight Training" src="{{ asset('assets') }}/images/400x400W.png">
 																					</span>
 																				</span>
 																			</span>
@@ -270,7 +270,7 @@
                                     <div class="column-1_4">
                                         <div class="sc_team_item sc_team_item_2 even">
                                             <div class="sc_team_item_avatar">
-                                                <img alt="team-2-style4.png" src="{{ asset('assets') }}/images/270x470.png">
+                                                <img alt="team-2-style4.png" src="{{ asset('assets') }}/images/270x470M.png">
                                                 <div class="sc_team_item_hover">
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
@@ -304,7 +304,7 @@
                                     <div class="column-1_4">
                                         <div class="sc_team_item sc_team_item_3 odd">
                                             <div class="sc_team_item_avatar">
-                                                <img alt="team-3-style4.png" src="{{ asset('assets') }}/images/270x470.png">
+                                                <img alt="team-3-style4.png" src="{{ asset('assets') }}/images/270x470J.png">
                                                 <div class="sc_team_item_hover">
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
@@ -338,7 +338,7 @@
                                     <div class="column-1_4">
                                         <div class="sc_team_item sc_team_item_4 even">
                                             <div class="sc_team_item_avatar">
-                                                <img alt="team-4-style4.png" src="{{ asset('assets') }}/images/270x470.png">
+                                                <img alt="team-4-style4.png" src="{{ asset('assets') }}/images/270x470A.png">
                                                 <div class="sc_team_item_hover">
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
@@ -438,7 +438,7 @@
                                     <div class="sc_testimonial_item">
                                         <div class="sc_testimonial_avatar_wrapper">
                                             <div class="sc_testimonial_avatar">
-                                                <img alt="testimonial-1.jpg" src="{{ asset('assets') }}/images/110x110.png">
+                                                <img alt="testimonial-1.jpg" src="{{ asset('assets') }}/images/110x110S.png">
                                             </div>
                                         </div>
                                         <div class="sc_testimonial_content_wrapper">
@@ -467,7 +467,7 @@
                                     <div class="sc_testimonial_item">
                                         <div class="sc_testimonial_avatar_wrapper">
                                             <div class="sc_testimonial_avatar">
-                                                <img alt="testimonial-3.jpg" src="{{ asset('assets') }}/images/110x110.png">
+                                                <img alt="testimonial-3.jpg" src="{{ asset('assets') }}/images/110x110J.png">
                                             </div>
                                         </div>
                                         <div class="sc_testimonial_content_wrapper">
@@ -496,7 +496,7 @@
                                     <div class="sc_testimonial_item">
                                         <div class="sc_testimonial_avatar_wrapper">
                                             <div class="sc_testimonial_avatar">
-                                                <img alt="testimonial-2.jpg" src="{{ asset('assets') }}/images/110x110.png">
+                                                <img alt="testimonial-2.jpg" src="{{ asset('assets') }}/images/110x110Sa.png">
                                             </div>
                                         </div>
                                         <div class="sc_testimonial_content_wrapper">
