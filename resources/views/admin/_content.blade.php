@@ -170,7 +170,7 @@
                                     <div class="items">
                                         <div class="card text-center">
                                             <div class="card-body">
-                                                <img src="images/testimonial/1.jpg" alt="">
+                                                <img src="{{ asset('assets') }}/admin/images/testimonial/1.jpg" alt="">
                                                 <h5 class="fs-16 font-w500 mb-1"><a href="app-profile.html" class="text-black">Roberto Carloz</a></h5>
                                                 <p class="fs-14">Body Building Trainer</p>
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -186,7 +186,7 @@
                                     <div class="items">
                                         <div class="card text-center">
                                             <div class="card-body">
-                                                <img src="images/testimonial/2.jpg" alt="">
+                                                <img src="{{ asset('assets') }}/admin/images/testimonial/2.jpg" alt="">
                                                 <h5 class="fs-16 font-w500 mb-1"><a href="app-profile.html" class="text-black">Cindy Moss</a></h5>
                                                 <p class="fs-14">Fat Belly Trainer</p>
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -202,7 +202,7 @@
                                     <div class="items">
                                         <div class="card text-center">
                                             <div class="card-body">
-                                                <img src="images/testimonial/3.jpg" alt="">
+                                                <img src="{{ asset('assets') }}/admin/images/testimonial/3.jpg" alt="">
                                                 <h5 class="fs-16 font-w500 mb-1"><a href="app-profile.html" class="text-black">Ivankov Smurz</a></h5>
                                                 <p class="fs-14">Sixpack Builder</p>
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -218,7 +218,7 @@
                                     <div class="items">
                                         <div class="card text-center">
                                             <div class="card-body">
-                                                <img src="images/testimonial/4.jpg" alt="">
+                                                <img src="{{ asset('assets') }}/admin/images/testimonial/4.jpg" alt="">
                                                 <h5 class="fs-16 font-w500 mb-1"><a href="app-profile.html" class="text-black">Louis Simatupang</a></h5>
                                                 <p class="fs-14">Body Building Trainer</p>
                                                 <div class="d-flex align-items-center justify-content-center">
@@ -269,7 +269,7 @@
                             </div>
                             <div class="card-body loadmore-content height750 dz-scroll pt-0" id="FeaturedMenusContent">
                                 <div class="media mb-4">
-                                    <img src="images/menus/1.png" width="85" alt="" class="rounded mr-3">
+                                    <img src="{{ asset('assets') }}/admin/images/menus/1.png" width="85" alt="" class="rounded mr-3">
                                     <div class="media-body">
                                         <h5><a href="food-menu.html" class="text-black fs-16">Chinese Orange Fruit With Avocado Salad</a></h5>
                                         <span class="fs-14 text-primary font-w500">Kevin Ignis</span>
@@ -280,7 +280,7 @@
                                     <li class="mb-2"><i class="fa fa-star-o mr-3 scale5 text-warning" aria-hidden="true"></i><span class="fs-14 text-black font-w500">176 Reviews</span></li>
                                 </ul>
                                 <div class="media mb-4">
-                                    <img src="images/menus/2.png" width="85" alt="" class="rounded mr-3">
+                                    <img src="{{ asset('assets') }}/admin/images/menus/2.png" width="85" alt="" class="rounded mr-3">
                                     <div class="media-body">
                                         <h5><a href="food-menu.html" class="text-black fs-16">Fresh or Frozen (No Sugar Added) Fruits</a></h5>
                                         <span class="fs-14 text-primary font-w500">Olivia Johanson</span>
@@ -291,7 +291,7 @@
                                     <li class="mb-2"><i class="fa fa-star-o mr-3 scale5 text-warning" aria-hidden="true"></i><span class="fs-14 text-black font-w500">176 Reviews</span></li>
                                 </ul>
                                 <div class="media mb-4">
-                                    <img src="images/menus/3.png" width="85" alt="" class="rounded mr-3">
+                                    <img src="{{ asset('assets') }}/admin/images/menus/3.png" width="85" alt="" class="rounded mr-3">
                                     <div class="media-body">
                                         <h5><a href="food-menu.html" class="text-black fs-16">Fresh or Frozen (No Sugar Added) Fruits</a></h5>
                                         <span class="fs-14 text-primary font-w500">Stefanny Raharjo</span>
@@ -302,7 +302,7 @@
                                     <li class="mb-2"><i class="fa fa-star-o mr-3 scale5 text-warning" aria-hidden="true"></i><span class="fs-14 text-black font-w500">176 Reviews</span></li>
                                 </ul>
                                 <div class="media mb-4">
-                                    <img src="images/menus/4.png" width="85" alt="" class="rounded mr-3">
+                                    <img src="{{ asset('assets') }}/admin/images/menus/4.png" width="85" alt="" class="rounded mr-3">
                                     <div class="media-body">
                                         <h5><a href="food-menu.html" class="text-black fs-16">Original Boiled Egg with Himalaya Salt</a></h5>
                                         <span class="fs-14 text-primary font-w500">Peter Parkur</span>
