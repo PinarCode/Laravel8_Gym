@@ -818,7 +818,8 @@
                         <a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
                             <img src="{{ asset('assets') }}/admin/images/profile/17.jpg" width="20" alt=""/>
                             <div class="header-info">
-                                <span class="text-black"><strong>Peter Parkur</strong></span>
+                                @auth
+                                <span class="text-black"><strong>{{Auth::user()->name}}</strong></span>
                                 <p class="fs-12 mb-0">Super Admin</p>
                             </div>
                         </a>
@@ -850,7 +851,8 @@
                                     <polyline points="16 17 21 12 16 7"></polyline>
                                     <line x1="21" y1="12" x2="9" y2="12"></line>
                                 </svg>
-                                <span class="ml-2">Logout </span>
+                                <span href="{{route('admin_logout')}}" class="ml-2">Logout </span>
+                                @endauth
                             </a>
                         </div>
                     </li>
