@@ -21,6 +21,7 @@
                     <div class="row no-gutters">
                         <div class="col-xl-12">
                             <div class="auth-form">
+
                                 <div class="text-center mb-3">
                                     <a href="index.html"><img src="{{ asset('assets') }}/admin/images/logo-full.png" alt=""></a>
                                 </div>
@@ -29,11 +30,11 @@
                                     @csrf
                                     <div class="form-group">
                                         <label class="mb-1 text-white"><strong>Email</strong></label>
-                                        <input type="email" class="form-control" value="hello@example.com">
+                                        <input type="email" id="email" name="email" class="form-control" value="">
                                     </div>
                                     <div class="form-group">
                                         <label class="mb-1 text-white"><strong>Password</strong></label>
-                                        <input type="password" class="form-control" value="Password">
+                                        <input type="password" id="password" name="password" class="form-control" value="">
                                     </div>
                                     <div class="form-row d-flex justify-content-between mt-4 mb-2">
                                         <div class="form-group">
