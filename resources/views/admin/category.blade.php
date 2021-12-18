@@ -38,7 +38,7 @@
                                                     <td>{{$rs->parent_id}}</td>
                                                     <td>{{$rs->title}}</td>
                                                     <td>{{$rs->status}}</td>
-                                                    <td><span class="btn light btn-warning">Edit</span></td>
+                                                    <td><span class="btn light btn-warning"><a href="{{route('admin_category_edit',['id'=>$rs->id])}}">Edit</a></span></td>
                                                     <td><span class="btn light btn-danger"><a href="{{route('admin_category_delete',['id'=>$rs->id])}}" onclick="return confirm('Delete ! Are you sure?')">Delete</a></span></td>
                                                 </tr>
                                                 @endforeach
