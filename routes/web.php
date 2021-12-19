@@ -39,6 +39,16 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::post('/category/update/{id}', [\App\Http\Controllers\Admin\CategoryController::class, 'update'])->name('admin_category_update');
     Route::get('/category/delete/{id}', [\App\Http\Controllers\Admin\CategoryController::class, 'destroy'])->name('admin_category_delete');
     Route::get('/category/show', [\App\Http\Controllers\Admin\CategoryController::class, 'show'])->name('admin_category_show');
+
+    Route::prefix('course')->group(function() {
+        Route::get('/', [\App\Http\Controllers\Admin\CourseController::class, 'index'])->name('admin_courses');
+        Route::get('create', [\App\Http\Controllers\Admin\CourseController::class, 'create'])->name('admin_course_add');
+        Route::post('store', [\App\Http\Controllers\Admin\CourseController::class, 'store'])->name('admin_course_store');
+        Route::get('edit/{id}', [\App\Http\Controllers\Admin\CourseController::class, 'edit'])->name('admin_course_edit');
+        Route::post('update/{id}', [\App\Http\Controllers\Admin\CourseController::class, 'update'])->name('admin_course_update');
+        Route::get('delete/{id}', [\App\Http\Controllers\Admin\CourseController::class, 'destroy'])->name('admin_course_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\CourseController::class, 'show'])->name('admin_course_show');
+    });
 });
 
 Route::get('/admin/login', [HomeController::class, 'login'])->name('admin_login');

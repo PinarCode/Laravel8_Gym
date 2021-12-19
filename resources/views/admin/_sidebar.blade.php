@@ -38,8 +38,8 @@
                     <span class="nav-text">Shop</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{route('admin_category')}}">Course List</a></li>
-                    <li><a href="./ecom-product-detail.html">Course Details</a></li>
+                    <li><a href="{{route('admin_category')}}">Category List</a></li>
+                    <li><a href="{{route('admin_courses')}}">Course List</a></li>
                     <li><a href="./ecom-product-order.html">Order</a></li>
                     <li><a href="./ecom-checkout.html">Checkout</a></li>
                     <li><a href="./ecom-invoice.html">Invoice</a></li>

@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Category List')
+@section('title', 'Course List')
 
 @section('content')
     <!--**********************************
@@ -12,8 +12,8 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Category List</h4><br>
-                            <span class="btn light btn-info"><a href="{{route('admin_category_add')}}">Add Category</a></span>
+                            <h4 class="card-title">Course List</h4><br>
+                            <span class="btn light btn-info"><a href="{{route('admin_course_add')}}">Add Course</a></span>
                         </div>
                         <div class="card-body pb-1">
                             <div class="col-lg-12">
@@ -24,8 +24,11 @@
                                                 <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>PARENT</th>
+                                                    <th>CATEGORY</th>
                                                     <th>TİTLE</th>
+                                                    <th>PRICE</th>
+                                                    <th>MONTH</th>
+                                                    <th>IMAGE</th>
                                                     <th>STATUS</th>
                                                     <th>EDİT</th>
                                                     <th>DELETE</th>
@@ -35,11 +38,14 @@
                                                 @foreach ($datalist as $rs)
                                                 <tr>
                                                     <td><strong>{{$rs->id}}</strong></td>
-                                                    <td>{{$rs->parent_id}}</td>
+                                                    <td>{{$rs->category_id}}</td>
                                                     <td>{{$rs->title}}</td>
+                                                    <td>{{$rs->price}}</td>
+                                                    <td>{{$rs->month}}</td>
+                                                    <td>{{$rs->image}}</td>
                                                     <td>{{$rs->status}}</td>
-                                                    <td><span class="btn light btn-warning"><a href="{{route('admin_category_edit',['id'=>$rs->id])}}">Edit</a></span></td>
-                                                    <td><span class="btn light btn-danger"><a href="{{route('admin_category_delete',['id'=>$rs->id])}}" onclick="return confirm('Delete ! Are you sure?')">Delete</a></span></td>
+                                                    <td><a href="{{route('admin_course_edit',['id'=>$rs->id])}}"><img src="{{ asset('assets') }}/admin/icons/feather/edit.svg"></a></td>
+                                                    <td><a href="{{route('admin_course_delete',['id'=>$rs->id])}}" onclick="return confirm('Delete ! Are you sure?')"><img src="{{ asset('assets') }}/admin/icons/feather/trash-2.svg"></a></td>
                                                 </tr>
                                                 @endforeach
                                                 </tbody>

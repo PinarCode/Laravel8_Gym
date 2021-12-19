@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Add Course')
+@section('title', 'Add Category')
 
 @section('content')
     <!--**********************************
@@ -10,14 +10,14 @@
         <div class="container-fluid">
             <div class="page-titles">
                 <ol class="breadcrumb">
-                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Add Course</a></li>
+                    <li class="breadcrumb-item active"><a href="javascript:void(0)">Add Category</a></li>
                 </ol>
             </div>
             <div class="row">
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Add Course</h4>
+                            <h4 class="card-title">Add Category</h4>
                         </div>
                         <div class="card-body pb-1">
                             <div class="card-body">
@@ -44,7 +44,7 @@
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label>Description</label>
-                                                <input type="description" class="form-control">
+                                                <input type="text" name="description" class="form-control">
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label>Slug</label>
@@ -58,7 +58,7 @@
                                                 </select>
                                             </div>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Add Course</button>
+                                        <button type="submit" class="btn btn-primary">Add Category</button>
                                     </form>
                                 </div>
                             </div>
