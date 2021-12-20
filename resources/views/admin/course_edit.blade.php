@@ -2,6 +2,14 @@
 
 @section('title', 'Edit Course')
 
+<!-- include summernote css/js -->
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
 @section('content')
     <!--**********************************
                 Content body start
@@ -22,7 +30,7 @@
                         <div class="card-body pb-1">
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form action="{{route('admin_course_update', ['id'=>$data->id])}}" method="post">
+                                    <form action="{{route('admin_course_update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-row">
                                             <div class="form-group col-md-6">
@@ -45,9 +53,15 @@
                                                 <label>Description</label>
                                                 <input type="text" name="description" value="{{$data->description}}" class="form-control">
                                             </div>
-                                            <div class="form-group col-md-6">
+                                            <div class="form-group col-md-12">
                                                 <label>Detail</label>
-                                                <input type="text" name="detail" value="{{$data->detail}}" class="form-control">
+                                                <textarea id="summernote" name="detail"></textarea>
+                                                <script>
+                                                    $('#summernote').summernote({
+                                                        tabsize: 2,
+                                                        height: 100
+                                                    });
+                                                </script>
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label>Price</label>
@@ -56,6 +70,13 @@
                                             <div class="form-group col-md-6">
                                                 <label>Month</label>
                                                 <input type="number" name="month" value="{{$data->month}}" class="form-control">
+                                            </div>
+                                            <div class="form-group col-md-6">
+                                                <label>Image</label>
+                                                <input type="file" name="image" value="{{$data->image}}" class="form-control">
+                                                @if($data->image)
+                                                    <img src="{{ Storage::url($data->image)}}" height="80" alt="">
+                                                @endif
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label>Status</label>
