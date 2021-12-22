@@ -54,7 +54,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::prefix('image')->group(function() {
         Route::get('create/{course_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('admin_image_add');
         Route::post('store/{course_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('admin_image_store');
-        Route::get('delete/{id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
+        Route::get('delete/{id}/{course_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('admin_image_delete');
         Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('admin_image_show');
     });
 });

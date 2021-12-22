@@ -1,23 +1,19 @@
-@extends('layouts.admin')
+<html>
+<head>
+    <title>Image Gallery</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('assets') }}/admin/images/favicon.png">
+    <link rel="stylesheet" href="{{ asset('assets') }}/admin/vendor/chartist/css/chartist.min.css">
+    <link href="{{ asset('assets') }}/admin/vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="{{ asset('assets') }}/admin/vendor/owl-carousel/owl.carousel.css" rel="stylesheet">
+    <link href="{{ asset('assets') }}/admin/css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
-@section('title', 'Add Images Gallery')
-
-<!-- include summernote css/js -->
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-
-@section('content')
+</head>
+<body>
     <!--**********************************
                 Content body start
             ***********************************-->
-    <div class="content-body">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-12">
+
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">{{$data->title}}</h4>
@@ -39,17 +35,38 @@
                                         </div>
                                         <button type="submit" class="btn btn-primary">Add Image</button>
                                     </form>
+                                    <table class="table table-responsive-md">
+                                        <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>TITLE</th>
+                                            <th>IMAGE</th>
+                                            <th>ACTIONS</th>
+                                        </tr>
+                                        </thead>
+                                        <tbody>
+                                        @foreach ($images as $rs)
+                                            <tr>
+                                                <td><strong>{{$rs->id}}</strong></td>
+                                                <td>{{$rs->title}}</td>
+                                                <td>
+                                                    @if($rs->image)
+                                                        <img src="{{ Storage::url($rs->image)}}" height="60" alt="">
+                                                    @endif
+                                                </td>
+                                                <td><a href="{{route('admin_image_delete',['id'=>$rs->id,'course_id'=>$data->id])}}" onclick="return confirm('Record will be delete ! Are you sure?')"><img src="{{ asset('assets') }}/admin/icons/feather/trash-2.svg"></a></td>
+                                            </tr>
+                                        @endforeach
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <!-- /# card -->
-                </div>
-            </div>
-        </div>
-    </div>
+
     <!--**********************************
         Content body end
     ***********************************-->
-
-@endsection
+</body>
+</html>

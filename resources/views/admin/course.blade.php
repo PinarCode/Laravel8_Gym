@@ -25,7 +25,7 @@
                                                 <tr>
                                                     <th>ID</th>
                                                     <th>CATEGORY</th>
-                                                    <th>TİTLE</th>
+                                                    <th>TITLE</th>
                                                     <th>PRICE</th>
                                                     <th>MONTH</th>
                                                     <th>IMAGE</th>
@@ -48,7 +48,9 @@
                                                             <img src="{{ Storage::url($rs->image)}}" height="30" alt="">
                                                         @endif
                                                     </td>
-                                                    <td><a href="{{route('admin_image_add',['course_id'=>$rs->id])}}"><img src="{{ asset('assets') }}/admin/images/gallery.png" height="30"></a></td>
+                                                    <td><a href="{{route('admin_image_add',['course_id'=>$rs->id])}}" onclick="return !window.open(this.href, '', 'top=50 left=100 widht=1100 height=700')">
+                                                            <img src="{{ asset('assets') }}/admin/images/gallery.png" height="30"></a>
+                                                    </td>
                                                     <td>{{$rs->status}}</td>
                                                     <td><a href="{{route('admin_course_edit',['id'=>$rs->id])}}"><img src="{{ asset('assets') }}/admin/icons/feather/edit.svg"></a></td>
                                                     <td><a href="{{route('admin_course_delete',['id'=>$rs->id])}}" onclick="return confirm('Delete ! Are you sure?')"><img src="{{ asset('assets') }}/admin/icons/feather/trash-2.svg"></a></td>
