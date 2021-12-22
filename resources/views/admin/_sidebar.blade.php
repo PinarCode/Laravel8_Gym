@@ -17,23 +17,8 @@
                     <li><a href="personal-record.html">Personal Record</a></li>
                 </ul>
             </li>
-            <li><a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
-                    <i class="flaticon-381-television"></i>
-                    <span class="nav-text">Apps</span>
-                </a>
-                <ul aria-expanded="false">
-                    <li><a href="./app-profile.html">Profile</a></li>
-                    <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Email</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./email-compose.html">Compose</a></li>
-                            <li><a href="./email-inbox.html">Inbox</a></li>
-                            <li><a href="./email-read.html">Read</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./app-calender.html">Calendar</a></li>
-                </ul>
-            </li>
-            <li><a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+            <li>
+                <a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
                     <i class="flaticon-381-heart"></i>
                     <span class="nav-text">Shop</span>
                 </a>
@@ -46,24 +31,11 @@
                     <li><a href="./ecom-customers.html">Customers</a></li>
                 </ul>
             </li>
-            <li><a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
-                    <i class="flaticon-381-layer-1"></i>
-                    <span class="nav-text">Pages</span>
+            <li>
+                <a class="has-arrow ai-icon" href="{{route('admin_setting')}}" aria-expanded="false">
+                    <i class="flaticon-381-settings-1"></i>
+                    <span class="nav-text">Settings</span>
                 </a>
-                <ul aria-expanded="false">
-                    <li><a href="./page-register.html">Register</a></li>
-                    <li><a href="./page-login.html">Login</a></li>
-                    <li><a class="has-arrow" href="javascript:void(0)" aria-expanded="false">Error</a>
-                        <ul aria-expanded="false">
-                            <li><a href="./page-error-400.html">Error 400</a></li>
-                            <li><a href="./page-error-403.html">Error 403</a></li>
-                            <li><a href="./page-error-404.html">Error 404</a></li>
-                            <li><a href="./page-error-500.html">Error 500</a></li>
-                            <li><a href="./page-error-503.html">Error 503</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="./page-lock-screen.html">Lock Screen</a></li>
-                </ul>
             </li>
         </ul>
         <div class="add-menu-sidebar">
