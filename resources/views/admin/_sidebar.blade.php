@@ -4,36 +4,24 @@
 <div class="deznav">
     <div class="deznav-scroll">
         <ul class="metismenu" id="menu">
-            <li><a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
+            <li><a class="ai-icon" href="javascript:void(0)" aria-expanded="false">
                     <i class="flaticon-381-networking"></i>
                     <span class="nav-text">Dashboard</span>
                 </a>
-                <ul aria-expanded="false">
-                    <li><a href="index.html">Dashboard</a></li>
-                    <li><a href="workout-statistic.html">Workout Statistic</a></li>
-                    <li><a href="workoutplan.html">Workout Plan</a></li>
-                    <li><a href="distance-map.html">Distance Map</a></li>
-                    <li><a href="food-menu.html">Diet Food Menu</a></li>
-                    <li><a href="personal-record.html">Personal Record</a></li>
-                </ul>
             </li>
-            <li>
-                <a class="has-arrow ai-icon" href="javascript:void(0)" aria-expanded="false">
-                    <i class="flaticon-381-heart"></i>
-                    <span class="nav-text">Shop</span>
+            <li><a href="{{route('admin_category')}}" class="ai-icon" aria-expanded="false">
+                    <i class="flaticon-381-pad"></i>
+                    <span class="nav-text">Category List</span>
                 </a>
-                <ul aria-expanded="false">
-                    <li><a href="{{route('admin_category')}}">Category List</a></li>
-                    <li><a href="{{route('admin_courses')}}">Course List</a></li>
-                    <li><a href="./ecom-product-order.html">Order</a></li>
-                    <li><a href="./ecom-checkout.html">Checkout</a></li>
-                    <li><a href="./ecom-invoice.html">Invoice</a></li>
-                    <li><a href="./ecom-customers.html">Customers</a></li>
-                </ul>
+            </li>
+            <li><a href="{{route('admin_courses')}}" class="ai-icon" aria-expanded="false">
+                    <i class="flaticon-381-news"></i>
+                    <span class="nav-text">Course List</span>
+                </a>
             </li>
             <li>
-                <a class="has-arrow ai-icon" href="{{route('admin_setting')}}" aria-expanded="false">
-                    <i class="flaticon-381-settings-1"></i>
+                <a class="ai-icon" href="{{route('admin_setting')}}" aria-expanded="false">
+                    <i class="flaticon-381-settings-2"></i>
                     <span class="nav-text">Settings</span>
                 </a>
             </li>

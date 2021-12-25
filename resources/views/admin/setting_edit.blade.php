@@ -31,19 +31,19 @@
                                                 <a class="nav-link active" data-toggle="tab" href="#general"><i class="la la-home mr-2"></i> General</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#smtp"><i class="la la-user mr-2"></i> Smtp Email</a>
+                                                <a class="nav-link" data-toggle="tab" href="#smtp"><i class="la la-envelope mr-2"></i> Smtp Email</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#social"><i class="la la-phone mr-2"></i>  Social Media</a>
+                                                <a class="nav-link" data-toggle="tab" href="#social"><i class="la la-instagram mr-2"></i>  Social Media</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#about"><i class="la la-envelope mr-2"></i> About Us</a>
+                                                <a class="nav-link" data-toggle="tab" href="#about"><i class="la la-user mr-2"></i> About Us</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#contact1"><i class="la la-envelope mr-2"></i> Contact Page</a>
+                                                <a class="nav-link" data-toggle="tab" href="#contact1"><i class="la la-phone mr-2"></i> Contact Page</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" data-toggle="tab" href="#reference"><i class="la la-envelope mr-2"></i> References</a>
+                                                <a class="nav-link" data-toggle="tab" href="#reference"><i class="la la-file mr-2"></i> References</a>
                                             </li>
                                         </ul>
                                         <div class="tab-content">

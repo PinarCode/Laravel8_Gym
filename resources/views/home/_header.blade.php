@@ -1,3 +1,6 @@
+@php
+    $parentCategories = \App\Http\Controllers\HomeController::categoryList()
+@endphp
 <header class="top_panel_wrap bg_tint_dark bg_type_image menu_bg_color_1">
     <div class="menu_main_wrap logo_left">
         <div class="content_wrap clearfix">
@@ -36,16 +39,6 @@
                                     <span>Homepage GYM1</span>
                                 </a>
                             </li>
-                            <li class="menu-item">
-                                <a href="index2.html">
-                                    <span>Homepage GYM2</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="index3.html">
-                                    <span>Homepage GYM3</span>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li class="menu-item menu-item-has-children">
@@ -63,75 +56,19 @@
                                     <span>Contact Us</span>
                                 </a>
                             </li>
-                            <li class="menu-item">
-                                <a href="features-typography.html">
-                                    <span>Typography</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="features-shortcodes.html">
-                                    <span>Shortcodes</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="features-events.html">
-                                    <span>Events Calendar</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="features-not_existing_page.html">
-                                    <span>Page 404 (Style 1)</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="features-not_existing_page2.html">
-                                    <span>Page 404 (Style 2)</span>
-                                </a>
-                            </li>
                         </ul>
                     </li>
                     <li class="menu-item menu-item-has-children">
-                        <a href="classes.html">
-                            <span>Classes</span>
-                        </a>
+                        <a href="classes.html"><span>Categories</span></a>
                         <ul class="sub-menu">
-                            <li class="menu-item">
-                                <a href="classes.html">
-                                    <span>Classes</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="classes-free-course.html">
-                                    <span>Free course</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="classes-paid-course.html">
-                                    <span>Paid course</span>
-                                </a>
-                            </li>
+                            @foreach($parentCategories as $rs)
                             <li class="menu-item menu-item-has-children">
-                                <a href="#">
-                                    <span>Lessons</span>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
-                                        <a href="classes-lessons-free-lesson-started.html">
-                                            <span>Free lesson (started)</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="classes-lessons-free-lesson-coming-soon.html">
-                                            <span>Free lesson (coming soon)</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="classes-lessons-lesson-from-paid-course.html">
-                                            <span>Lesson from paid course</span>
-                                        </a>
-                                    </li>
-                                </ul>
+                                <a href="#"><span>{{$rs->title}}</span></a>
+                                @if(count($rs->children))
+                                    @include('home.categorytree',['children' => $rs->children])
+                                @endif
                             </li>
+                            @endforeach
                         </ul>
                     </li>
                     <li class="menu-item menu-item-has-children">
