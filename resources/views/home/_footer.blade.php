@@ -1,3 +1,6 @@
+@php
+    $setting = \App\Http\Controllers\HomeController::getsetting()
+@endphp
 <footer class="footer_wrap bg_tint_light footer_style_light widget_area">
     <div class="content_wrap">
         <div class="columns_wrap">
@@ -88,11 +91,11 @@
                     </li>
                     <li class="menu-item">
                         <a href="#">
-                            <span>Classes</span>
+                            <span>Categories</span>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">
+                        <a href="{{route('aboutus')}}">
                             <span>About</span>
                         </a>
                     </li>
@@ -105,32 +108,40 @@
             </div>
             <div class="social">
                 <div class="sc_socials sc_socials_size_small">
+                    @if($setting->facebook != null)
                     <div class="sc_socials_item">
-                        <a href="#" target="_blank" class="social_icons social_facebook icons">
+                        <a href="{{$setting->facebook}}" target="_blank" class="social_icons social_facebook icons">
                             <span class="icon-facebook"> </span>
                         </a>
                     </div>
+                    @endif
+                    @if($setting->twitter != null)
                     <div class="sc_socials_item">
-                        <a href="#" target="_blank" class="social_icons social_twitter icons">
+                        <a href="{{$setting->twitter}}" target="_blank" class="social_icons social_twitter icons">
                             <span class="icon-twitter"> </span>
                         </a>
                     </div>
+                    @endif
+                    @if($setting->instagram != null)
                     <div class="sc_socials_item">
-                        <a href="#" target="_blank" class="social_icons social_gplus icons">
-                            <span class="icon-gplus"> </span>
+                        <a href="{{$setting->instagram}}" target="_blank" class="social_icons social_instagram icons">
+                            <span class="icon-instagram-2"></span>
                         </a>
                     </div>
+                    @endif
+                    @if($setting->youtube != null)
                     <div class="sc_socials_item">
-                        <a href="#" target="_blank" class="social_icons social_youtube icons">
+                        <a href="{{$setting->youtube}}" target="_blank" class="social_icons social_youtube icons">
                             <span class="icon-youtube"> </span>
                         </a>
                     </div>
+                    @endif
                 </div>
             </div>
         </div>
         <div class="copyright_text">
             <p>
-                <span><a href="#">AXIOM</a> © 2015 ALL RIGHTS RESERVED</span>
+                <span><a href="#">{{$setting->company}}</a> © 2015 ALL RIGHTS RESERVED</span>
             </p>
             <p>
                 <span class="sc_highlight">The most profitable investment is the one you’re making to your own health. Do not miss your chance to get stronger, healthier and younger, and get lots of fun, good cheer and tons of positive energy! Sign up to the Gym and build yourself!</span>
