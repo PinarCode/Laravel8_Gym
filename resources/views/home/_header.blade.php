@@ -6,7 +6,7 @@
         <div class="content_wrap clearfix">
             <div class="logo">
 						<span class="logo_shape">
-							<a href="index.html">
+							<a href="{{route('homepage')}}">
 								<img src="{{ asset('assets') }}/images/131x70.png" class="logo_main" alt="">
 								<img src="{{ asset('assets') }}/images/131x70.png" class="logo_fixed" alt="">
 								<span class="logo_slogan"> </span>
@@ -30,16 +30,9 @@
             <nav role="navigation" class="menu_main_nav_area menu_color_bg_2">
                 <ul id="menu_main" class="menu_main_nav">
                     <li class="menu-item current-menu-ancestor menu-item-has-children">
-                        <a href="index.html">
+                        <a href="{{route('homepage')}}">
                             <span>Home</span>
                         </a>
-                        <ul class="sub-menu">
-                            <li class="menu-item current-menu-item">
-                                <a href="index.html">
-                                    <span>Homepage GYM1</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="menu-item menu-item-has-children">
                         <a href="#">
@@ -132,61 +125,17 @@
                                     </li>
                                 </ul>
                             </li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#">
-                                    <span>Portfolio tiles</span>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
-                                        <a href="blog-portfolio-portfolio-2-columns.html">
-                                            <span>Portfolio (2 columns)</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="blog-portfolio-portfolio-3-columns.html">
-                                            <span>Portfolio (3 columns)</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item menu-item-has-children">
-                                        <a href="#">
-                                            <span>Portfolio hovers</span>
-                                        </a>
-                                        <ul class="sub-menu">
-                                            <li class="menu-item">
-                                                <a href="blog-portfolio-hovers-circle.html">
-                                                    <span>Circle, Part 1</span>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="blog-portfolio-hovers-circle2.html">
-                                                    <span>Circle, Part 2</span>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="blog-portfolio-hovers-circle3.html">
-                                                    <span>Circle, Part 3</span>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="blog-portfolio-hovers-square.html">
-                                                    <span>Square, Part 1</span>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="blog-portfolio-hovers-square2.html">
-                                                    <span>Square, Part 2</span>
-                                                </a>
-                                            </li>
-                                            <li class="menu-item">
-                                                <a href="blog-portfolio-hovers-square3.html">
-                                                    <span>Square, Part 3</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
                         </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="{{route('admin_login')}}">
+                            <img src="{{ asset('assets') }}/images/user-xl.png" style="height: 30px">
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="#">
+                            <img src="{{ asset('assets') }}/images/cart-36-xl.png" style="height: 30px">
+                        </a>
                     </li>
                     <li id="blob">
 								<span>
