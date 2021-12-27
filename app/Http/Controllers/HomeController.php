@@ -26,6 +26,18 @@ class HomeController extends Controller
         return  view('home.about');
     }
 
+    public function references(){
+        return  view('home.about');
+    }
+
+    public function fag(){
+        return  view('home.about');
+    }
+
+    public function contact(){
+        return  view('home.about');
+    }
+
     public function login(){
         return view('admin.login');
     }

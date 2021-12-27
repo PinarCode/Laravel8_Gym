@@ -35,23 +35,6 @@
                         </a>
                     </li>
                     <li class="menu-item menu-item-has-children">
-                        <a href="#">
-                            <span>Features</span>
-                        </a>
-                        <ul class="sub-menu">
-                            <li class="menu-item">
-                                <a href="features-about-us.html">
-                                    <span>About Us</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="features-contact-us.html">
-                                    <span>Contact Us</span>
-                                </a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
                         <a href="classes.html"><span>Categories</span></a>
                         <ul class="sub-menu">
                             @foreach($parentCategories as $rs)
@@ -65,73 +48,28 @@
                         </ul>
                     </li>
                     <li class="menu-item menu-item-has-children">
-                        <a href="trainers-team-members.html">
-                            <span>Trainers</span>
+                        <a href="{{route('references')}}">
+                            <span>References</span>
                         </a>
-                        <ul class="sub-menu">
-                            <li class="menu-item">
-                                <a href="trainers-team-members.html">
-                                    <span>Trainers Team</span>
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="trainers-trainer-personal-page.html">
-                                    <span>Trainer&#8217;s Personal Page</span>
-                                </a>
-                            </li>
-                        </ul>
                     </li>
                     <li class="menu-item menu-item-has-children">
-                        <a href="blog.html">
-                            <span>Blog</span>
+                        <a href="{{route('fag')}}">
+                            <span>FAQ</span>
                         </a>
-                        <ul class="sub-menu">
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#">
-                                    <span>Post Formats</span>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
-                                        <a href="blog-with-sidebar.html">
-                                            <span>With Sidebar</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="blog-without-sidebar.html">
-                                            <span>Without sidebar</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="blog-full-width.html">
-                                            <span>Full Width</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="#">
-                                    <span>Masonry tiles</span>
-                                </a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item">
-                                        <a href="blog-masonry-masonry-2-columns.html">
-                                            <span>Masonry (2 columns)</span>
-                                        </a>
-                                    </li>
-                                    <li class="menu-item">
-                                        <a href="blog-masonry-masonry-3-columns.html">
-                                            <span>Masonry (3 columns)</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
+                        <a href="{{route('contact')}}">
+                            <span>Contact</span>
+                        </a>
                     </li>
                     <li class="menu-item menu-item-has-children">
                         <a href="{{route('admin_login')}}">
                             <img src="{{ asset('assets') }}/images/user-xl.png" style="height: 30px">
                         </a>
                     </li>
+                    @auth
+                    <li><span>{{Auth::user()->name}}</span></li>
+                    @endauth
                     <li class="menu-item menu-item-has-children">
                         <a href="#">
                             <img src="{{ asset('assets') }}/images/cart-36-xl.png" style="height: 30px">
