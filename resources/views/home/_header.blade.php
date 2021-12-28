@@ -35,6 +35,11 @@
                         </a>
                     </li>
                     <li class="menu-item menu-item-has-children">
+                        <a href="{{route('aboutus')}}">
+                            <span>Aboutus</span>
+                        </a>
+                    </li>
+                    <li class="menu-item menu-item-has-children">
                         <a href="classes.html"><span>Categories</span></a>
                         <ul class="sub-menu">
                             @foreach($parentCategories as $rs)
@@ -63,23 +68,23 @@
                         </a>
                     </li>
                     <li class="menu-item menu-item-has-children">
-                        <a href="{{route('admin_login')}}">
-                            <img src="{{ asset('assets') }}/images/user-xl.png" style="height: 30px">
-                        </a>
+                        @auth
+                            <a class="nav-link dropdown-toggle dropdown-toggle-nocaret" href="#" data-bs-toggle="dropdown"><i class="icon-user-1"></i> &nbsp;{{Auth::user()->name}}</a>
+                        @endauth
+                        @guest
+                            <div><a href="/login" class="text-uppercase">LOGIN</a>&nbsp; / &nbsp;<a href="/register" class="text-uppercase">JOIN</a></div>
+                        @endguest
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#"><i class="icon-user"></i> My Account</a></li>
+                            <li><a href="#"> <i class="icon-heart-2"></i> My WishList</a></li>
+                            <li><a href="#"> <i class="icon-comment"></i> My Review</a></li>
+                            <li><a href="#"><i class="icon-file73"></i> Compare</a></li>
+                            <li><a href="#"> <i class="icon-check-2"></i> Checkout</a></li>
+                            <li> <a href="{{route('logout')}}" ><i class="revicon-logout"></i> Logout</a></li>
+                        </ul>
                     </li>
-                    @auth
-                    <li><span>{{Auth::user()->name}}</span></li>
-                    @endauth
-                    <li class="menu-item menu-item-has-children">
-                        <a href="#">
-                            <img src="{{ asset('assets') }}/images/cart-36-xl.png" style="height: 30px">
-                        </a>
-                    </li>
-                    <li id="blob">
-								<span>
-									<span></span>
-								</span>
-                    </li>
+                    <li id="blob"><span><span></span></span></li>
                 </ul>
             </nav>
         </div>
