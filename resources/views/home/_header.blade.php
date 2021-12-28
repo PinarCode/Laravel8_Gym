@@ -76,7 +76,7 @@
                         @endguest
 
                         <ul class="dropdown-menu">
-                            <li><a href="#"><i class="icon-user"></i> My Account</a></li>
+                            <li><a href="{{route('myprofile')}}"><i class="icon-user"></i> My Account</a></li>
                             <li><a href="#"> <i class="icon-heart-2"></i> My WishList</a></li>
                             <li><a href="#"> <i class="icon-comment"></i> My Review</a></li>
                             <li><a href="#"><i class="icon-file73"></i> Compare</a></li>
