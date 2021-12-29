@@ -8,6 +8,7 @@
 @section('keywords',$setting->keywords)
 
 @section('content')
+    @include('home._slider')
     <section class="grey_section">
         <div class="container">
             <div class="row">
