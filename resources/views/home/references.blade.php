@@ -3,7 +3,7 @@
 @endphp
 @extends('layouts.home')
 
-@section('title', $setting->title)
+@section('title', 'References - '. $setting->title)
 @section('description'){{ $setting->description }}@endsection
 @section('keywords',$setting->keywords)
 
@@ -15,11 +15,11 @@
             <div class="content_wrap">
                 <a class="breadcrumbs_item home" href="index.html">Home</a>
                 <span class="breadcrumbs_delimiter"></span>
-                <span class="breadcrumbs_item current">Our Tainers &#038; Instructors</span>
+                <span class="breadcrumbs_item current">References</span>
             </div>
         </div>
         <div class="content_wrap">
-            <h5 class="page_title">Başlık</h5>
+            <h5 class="page_title">REFERENCES</h5><br>
         </div>
     </div>
     <div class="page_content_wrap">
@@ -29,7 +29,7 @@
                     <div class="container">
                         <div class="row">
                             <article class="post_item post_item_excerpt post_format_standard post">
-                                İçerik
+                                {!! $setting->references !!}
                             </article>
                         </div>
                     </div>

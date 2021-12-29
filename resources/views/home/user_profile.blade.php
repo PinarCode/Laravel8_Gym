@@ -8,7 +8,7 @@
     <div class="top_panel_style_dark page_top_wrap page_top_title page_top_breadcrumbs">
         <div class="breadcrumbs">
             <div class="content_wrap">
-                <a class="breadcrumbs_item home" href="index.html">Home</a>
+                <a class="breadcrumbs_item home" href="{{route('homepage')}}">Home</a>
                 <span class="breadcrumbs_delimiter"></span>
                 <span class="breadcrumbs_item current">My Account</span>
             </div>
