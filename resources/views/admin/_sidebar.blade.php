@@ -20,7 +20,7 @@
                 </a>
             </li>
             <li><a href="{{route('admin_message')}}" class="ai-icon" aria-expanded="false">
-                    <i class="flaticon-381-news"></i>
+                    <i class="flaticon-381-folder-5"></i>
                     <span class="nav-text">Contact Messages</span>
                 </a>
             </li>

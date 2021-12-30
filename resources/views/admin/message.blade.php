@@ -13,7 +13,7 @@
                     <div class="card">
                         <div class="card-header">
                             <h4 class="card-title">Messages</h4><br>
-                            <span class="btn light btn-info"><a href="{{route('admin_course_add')}}">Add Course</a></span>
+                            @include('home.message')
                         </div>
                         <div class="card-body pb-1">
                             <div class="col-lg-12">
@@ -30,31 +30,24 @@
                                                     <th>SUBJECT</th>
                                                     <th>MESSAGE</th>
                                                     <th>ADMIN NOTE</th>
-                                                    <th>EDIT</th>
-                                                    <th>DELETE</th>
+                                                    <th colspan="3">ACTIONS</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>
                                                 @foreach ($datalist as $rs)
                                                 <tr>
                                                     <td><strong>{{$rs->id}}</strong></td>
-                                                    <td>
-                                                        {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs->category, $rs->category->title)}}
-                                                    </td>
-                                                    <td>{{$rs->title}}</td>
-                                                    <td>{{$rs->price}}</td>
-                                                    <td>{{$rs->month}}</td>
-                                                    <td>
-                                                        @if($rs->image)
-                                                            <img src="{{ Storage::url($rs->image)}}" height="30" alt="">
-                                                        @endif
-                                                    </td>
-                                                    <td><a href="{{route('admin_image_add',['course_id'=>$rs->id])}}" onclick="return !window.open(this.href, '', 'top=50 left=100 widht=1100 height=700')">
-                                                            <img src="{{ asset('assets') }}/admin/images/gallery.png" height="30"></a>
-                                                    </td>
+                                                    <td>{{$rs->name}}</td>
+                                                    <td>{{$rs->email}}</td>
+                                                    <td>{{$rs->phone}}</td>
+                                                    <td>{{$rs->subject}}</td>
+                                                    <td>{{$rs->message}}</td>
+                                                    <td>{{$rs->note}}</td>
                                                     <td>{{$rs->status}}</td>
-                                                    <td><a href="{{route('admin_course_edit',['id'=>$rs->id])}}"><img src="{{ asset('assets') }}/admin/icons/feather/edit.svg"></a></td>
-                                                    <td><a href="{{route('admin_course_delete',['id'=>$rs->id])}}" onclick="return confirm('Delete ! Are you sure?')"><img src="{{ asset('assets') }}/admin/icons/feather/trash-2.svg"></a></td>
+                                                    <td><a href="{{route('admin_message_edit',['id'=>$rs->id])}}" onclick="return !window.open(this.href, '', 'top=50 left=100 widht=1100 height=700')">
+                                                            <img src="{{ asset('assets') }}/admin/icons/feather/edit.svg"></a>
+                                                    </td>
+                                                    <td><a href="{{route('admin_message_delete',['id'=>$rs->id])}}" onclick="return confirm('Delete ! Are you sure?')"><img src="{{ asset('assets') }}/admin/icons/feather/trash-2.svg"></a></td>
                                                 </tr>
                                                 @endforeach
                                                 </tbody>

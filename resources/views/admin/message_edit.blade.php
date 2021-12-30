@@ -1,16 +1,13 @@
-@extends('layouts.admin')
+<link rel='stylesheet' href='{{ asset('assets') }}/js/vendor/swiper/idangerous.swiper.css' type='text/css' media='all' />
+<link rel='stylesheet' href='{{ asset('assets') }}/js/vendor/revslider/rs-plugin/css/settings.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='{{ asset('assets') }}/css/fontello/css/fontello.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='{{ asset('assets') }}/css/shortcodes.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='{{ asset('assets') }}/css/core.animation.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='{{ asset('assets') }}/css/style.css' type='text/css' media='all'/>
+<link rel='stylesheet' href='{{ asset('assets') }}/css/skin.css' type='text/css' media='all'/>
+<style id='themerex-custom-style-inline-css' type='text/css'></style>
+<link rel='stylesheet' href='{{ asset('assets') }}/css/responsive.css' type='text/css' media='all'/>
 
-@section('title', 'Edit Course')
-
-<!-- include summernote css/js -->
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
-
-@section('content')
     <!--**********************************
                 Content body start
             ***********************************-->
@@ -20,71 +17,47 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Edit Course</h4>
+                            <h4 class="card-title">Message Detail</h4>
+                            @include('home.message')
                         </div>
                         <div class="card-body pb-1">
                             <div class="card-body">
                                 <div class="basic-form">
-                                    <form action="{{route('admin_course_update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
+                                    <form action="{{route('admin_message_update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-row">
-                                            <div class="form-group col-md-6">
-                                                <label>Category</label>
-                                                <select class="form-control default-select" name="category_id">
-                                                    @foreach($datalist as $rs)
-                                                        <option value="{{$rs->id}}" @if ($rs->id == $data->parent_id) selected="selected" @endif>
-                                                            {{\App\Http\Controllers\Admin\CategoryController::getParentsTree($rs, $rs->title)}}
-                                                        </option>
-                                                    @endforeach
-                                                </select>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Title</label>
-                                                <input type="text" name="title" value="{{$data->title}}" class="form-control">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Keywords</label>
-                                                <input type="text" name="keywords" value="{{$data->keywords}}" class="form-control">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Description</label>
-                                                <input type="text" name="description" value="{{$data->description}}" class="form-control">
-                                            </div>
-                                            <div class="form-group col-md-12">
-                                                <label>Detail</label>
-                                                <textarea id="summernote" name="detail"></textarea>
-                                                <script>
-                                                    $('#summernote').summernote({
-                                                        tabsize: 2,
-                                                        height: 100
-                                                    });
-                                                </script>
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Price</label>
-                                                <input type="number" name="price" value="{{$data->price}}" class="form-control">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Month</label>
-                                                <input type="number" name="month" value="{{$data->month}}" class="form-control">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Image</label>
-                                                <input type="file" name="image" class="form-control">
-                                                @if($data->image)
-                                                    <img src="{{ Storage::url($data->image)}}" height="80" alt="">
-                                                @endif
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <label>Status</label>
-                                                <select class="form-control default-select" name="status">
-                                                    <option selected="selected">{{$data->status}}</option>
-                                                    <option>False</option>
-                                                    <option>True</option>
-                                                </select>
-                                            </div>
+                                            <table class="table table-responsive-md">
+                                                <tr>
+                                                    <th>ID</th> <td><strong>{{$data->id}}</strong></td>
+                                                </tr>
+                                                <tr>
+                                                    <th>NAME</th> <td>{{$data->name}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>EMAIL</th> <td>{{$data->email}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>PHONE</th> <td>{{$data->phone}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>SUBJECT</th> <td>{{$data->subject}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>MESSAGE</th> <td>{{$data->message}}</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>ADMIN NOTE</th>
+                                                    <td>
+                                                        <textarea id="note" name="note">{{$data->note}}</textarea>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td></td>
+                                                    <td><button type="submit" class="btn btn-primary">Update Message</button></td>
+                                                </tr>
+                                            </table>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Update Course</button>
+
                                     </form>
                                 </div>
                             </div>
@@ -98,5 +71,3 @@
     <!--**********************************
         Content body end
     ***********************************-->
-
-@endsection

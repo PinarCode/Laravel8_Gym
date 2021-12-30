@@ -51,7 +51,7 @@ class HomeController extends Controller
         $data->subject = $request->input('subject');
         $data->message = $request->input('message');
         $data->save();
-        return redirect()->route('contact')->with('success','Your message has been saved, We thank you.');
+        return redirect()->route('contact')->with('info','Your message has been saved, We thank you.');
     }
 
     public function login(){
