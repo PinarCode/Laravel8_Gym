@@ -91,6 +91,7 @@
                                                             </div>
                                                             <div class="column-1_2 sc_column_item sc_column_item_2 bg_tint_dark even">
                                                                 <div class="sc_contact_form sc_contact_form_standard contact_form_1">
+                                                                    @include('home.message')<br>
                                                                     <form class="" method="post" action="{{route('sendmessage')}}">
                                                                         @csrf
                                                                         <div class="sc_contact_form_info">

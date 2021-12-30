@@ -1,6 +1,6 @@
 @extends('layouts.admin')
 
-@section('title', 'Course List')
+@section('title', 'Contact Messages List')
 
 @section('content')
     <!--**********************************
@@ -12,7 +12,7 @@
                 <div class="col-lg-12">
                     <div class="card">
                         <div class="card-header">
-                            <h4 class="card-title">Course List</h4><br>
+                            <h4 class="card-title">Messages</h4><br>
                             <span class="btn light btn-info"><a href="{{route('admin_course_add')}}">Add Course</a></span>
                         </div>
                         <div class="card-body pb-1">
@@ -24,13 +24,12 @@
                                                 <thead>
                                                 <tr>
                                                     <th>ID</th>
-                                                    <th>CATEGORY</th>
-                                                    <th>TITLE</th>
-                                                    <th>PRICE</th>
-                                                    <th>MONTH</th>
-                                                    <th>IMAGE</th>
-                                                    <th>GALLERY</th>
-                                                    <th>STATUS</th>
+                                                    <th>NAME</th>
+                                                    <th>EMAIL</th>
+                                                    <th>PHONE</th>
+                                                    <th>SUBJECT</th>
+                                                    <th>MESSAGE</th>
+                                                    <th>ADMIN NOTE</th>
                                                     <th>EDIT</th>
                                                     <th>DELETE</th>
                                                 </tr>

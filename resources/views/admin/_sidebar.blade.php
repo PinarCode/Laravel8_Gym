@@ -4,7 +4,7 @@
 <div class="deznav">
     <div class="deznav-scroll">
         <ul class="metismenu" id="menu">
-            <li><a class="ai-icon" href="javascript:void(0)" aria-expanded="false">
+            <li><a class="ai-icon" href="{{route('adminhome')}}" aria-expanded="false">
                     <i class="flaticon-381-networking"></i>
                     <span class="nav-text">Dashboard</span>
                 </a>
@@ -17,6 +17,11 @@
             <li><a href="{{route('admin_courses')}}" class="ai-icon" aria-expanded="false">
                     <i class="flaticon-381-news"></i>
                     <span class="nav-text">Course List</span>
+                </a>
+            </li>
+            <li><a href="{{route('admin_message')}}" class="ai-icon" aria-expanded="false">
+                    <i class="flaticon-381-news"></i>
+                    <span class="nav-text">Contact Messages</span>
                 </a>
             </li>
             <li>
