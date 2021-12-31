@@ -3,11 +3,11 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Models\Course;
 use App\Models\Message;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Storage;
 
 class HomeController extends Controller
 {
@@ -20,8 +20,22 @@ class HomeController extends Controller
     }
 
     public function index(){
+
         $setting = Setting::first();
-        return  view('home.index',['setting'=>$setting]);
+        $slider = Course::select('id','title','image','price')->limit(4)->get();
+        //print_r($slider);
+        //exit();
+        $data = [
+            'setting'=>$setting,
+            'slider'=>$slider
+        ];
+        return  view('home.index',$data);
+    }
+
+    public function course($id){
+        $data = Course::find($id);
+        print_r($data);
+        exit();
     }
 
     public function aboutus(){

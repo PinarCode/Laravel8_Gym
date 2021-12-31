@@ -21,9 +21,7 @@ Route::get('/', function () {
 });
 Route::redirect('/anasayfa', '/home')->name('anasayfa');
 
-Route::get('/', function () {
-    return view('home.index');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
 Route::get('/home', [HomeController::class, 'index'])->name('homepage');
 Route::get('/aboutus', [HomeController::class, 'aboutus'])->name('aboutus');
@@ -31,6 +29,7 @@ Route::get('/references', [HomeController::class, 'references'])->name('referenc
 Route::get('/fag', [HomeController::class, 'fag'])->name('fag');
 Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
+Route::get('/course/{id}', [HomeController::class, 'course'])->name('course');
 
 Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
 
