@@ -52,7 +52,7 @@
                                             </div>
                                             <div class="form-group col-md-12">
                                                 <label>Detail</label>
-                                                <textarea id="summernote" name="detail"></textarea>
+                                                <textarea id="summernote" name="detail">{{$data->detail}}</textarea>
                                                 <script>
                                                     $('#summernote').summernote({
                                                         tabsize: 2,

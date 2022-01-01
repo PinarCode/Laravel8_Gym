@@ -117,121 +117,89 @@
         </div>
     </section>
 
-    <section class="">
+    <section class="grey_section team_section">
         <div class="container">
             <div class="row">
-                <div class="sc_content content_wrap">
-                    <h2 class="sc_title style_1 sc_align_center">OUR BLOG</h2>
-                    <h5 class="sc_undertitle style_1 sc_align_center">Our articles on healthy living and healthy
-                        eating</h5>
-                    <div
-                        class="sc_blogger layout_excerpt_2 template_excerpt_2 custom_isotope sc_blogger_vertical no_description">
-                        <div class="isotope_wrap" data-columns="2">
-                            <div class="isotope_item isotope_item_excerpt isotope_item_excerpt_2 isotope_column_2">
-                                <div class="post_item post_item_excerpt post_format_link post">
-                                    <div class="post_featured bg_image bg_image_11">
-                                        <div class="post_thumb" data-title="Link post">
-                                            <div class="post_content clearfix">
-                                                <div class="post_descr">
-                                                    <p>
-                                                        <a title="Go to Axiom portfolio"
-                                                           href="http://themeforest.net/user/axiomthemes/portfolio"
-                                                           target="_blank">http://themeforest.net/user/axiomthemes/portfolio</a>
-                                                    </p>
+                <div class="sc_section bg_tint_light">
+                    <div class="sc_content content_wrap">
+                        <div class="sc_section bg_tint_none aligncenter">
+                            <h2 class="sc_title style_1">POPULAR COURSES</h2>
+                            <h5 class="sc_undertitle style_3">Choose your style</h5>
+                            <div class="sc_team sc_team_style_4">
+                                <div class="sc_columns columns_wrap">
+                                    @foreach($popular as $rs)
+                                    <div class="column-1_3">
+                                        <div class="sc_team_item sc_team_item_1 odd first">
+                                            <div class="sc_team_item_avatar">
+                                                <img alt="team-1-style4.png" src="{{Storage::url($rs->image)}}" style="height: 200px">
+                                                <div class="sc_team_item_hover">
+                                                    <div class="sc_team_item_socials">
+                                                        <div class="sc_socials sc_socials_size_small">
+                                                            <div class="sc_socials_item">
+                                                                <a href="{{route('categorycourses',['id'=>$rs->id])}}" target="_blank"
+                                                                   class="social_icons social_facebook icons">
+                                                                    <span class="icon-file73"></span>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                            </div>
+                                            <div class="sc_team_item_info">
+                                                <h6 class="sc_team_item_title">
+                                                    <a href="{{route('categorycourses',['id'=>$rs->id])}}">{{$rs->title}}</a>
+                                                </h6>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="post_date">December 25, 2014</div>
-                                    <div class="post_info">
-															<span class="post_info_item post_info_posted">
-																Posted
-																<a href="http://themeforest.net/user/axiomthemes/portfolio"
-                                                                   class="post_info_date">December 25, 2014</a>
-															</span>
-                                        <span class="post_info_item post_info_posted_by">
-																by
-																<a href="#" class="post_info_author">admin</a>
-															</span>
-                                        <span class="post_info_item post_info_counters">
-																<a class="post_counters_item post_counters_views icon-eye-1"
-                                                                   title="Views - 231"
-                                                                   href="http://themeforest.net/user/axiomthemes/portfolio">231</a>
-																<a class="post_counters_item post_counters_comments icon-comment"
-                                                                   title="Comments - 0" href="#">
-																	<span class="post_counters_number">0</span>
-																</a>
-																<a class="post_counters_item post_counters_likes icon-heart-1 enabled"
-                                                                   title="Like" href="#" data-postid="42" data-likes="7"
-                                                                   data-title-like="Like" data-title-dislike=" dislike">
-																	<span class="post_counters_number">7</span>
-																</a>
-															</span>
-                                    </div>
-                                    <h3 class="post_title">
-                                        <a href="http://themeforest.net/user/axiomthemes/portfolio">
-                                            <span class="post_icon icon-pitch"> </span>
-                                            <span class="post_title_text">Link post</span>
-                                        </a>
-                                    </h3>
-                                </div>
-                            </div>
-                            <div class="isotope_item isotope_item_excerpt isotope_item_excerpt_2 isotope_column_2">
-                                <div class="post_item post_item_excerpt post_format_quote post">
-                                    <div class="post_featured bg_image bg_image_12">
-                                        <div class="post_thumb" data-title="Quote post">
-                                            <div class="post_content clearfix">
-                                                <div class="post_descr">
-                                                    <blockquote cite="#" class="sc_quote custom_without_img ">
-                                                        <p>To me, it doesn&#8217;t matter how good you are. Sport is all
-                                                            about playing and competing. Whatever you do in cricket and
-                                                            in sport, enjoy it, be positive and try to win.</p>
-                                                        <p class="sc_quote_title">
-                                                            <a href="#">David Anderson</a>
-                                                        </p>
-                                                    </blockquote>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="post_date">December 26, 2014</div>
-                                    <div class="post_info">
-															<span class="post_info_item post_info_posted">
-																Posted
-																<a href="#" class="post_info_date">December 26, 2014</a>
-															</span>
-                                        <span class="post_info_item post_info_posted_by">
-																by
-																<a href="#" class="post_info_author">admin</a>
-															</span>
-                                        <span class="post_info_item post_info_counters">
-																<a class="post_counters_item post_counters_views icon-eye-1"
-                                                                   title="Views - 317" href="#">317</a>
-																<a class="post_counters_item post_counters_comments icon-comment"
-                                                                   title="Comments - 0" href="#">
-																	<span class="post_counters_number">0</span>
-																</a>
-																<a class="post_counters_item post_counters_likes icon-heart-1 enabled"
-                                                                   title="Like" href="#" data-postid="40" data-likes="3"
-                                                                   data-title-like="Like" data-title-dislike=" dislike">
-																	<span class="post_counters_number">3</span>
-																</a>
-															</span>
-                                    </div>
-                                    <h3 class="post_title">
-                                        <a href="#">
-                                            <span class="post_icon icon-pitch"> </span>
-                                            <span class="post_title_text">Quote post</span>
-                                        </a>
-                                    </h3>
+                                    @endforeach
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="sc_section bg_tint_none aligncenter">
-                        <a href="#"
-                           class="sc_button sc_button_square sc_button_style_filled sc_button_bg_color2 sc_button_size_large  sc_button_iconed inherit">VIEW
-                            ALL POSTS</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="grey_section team_section">
+        <div class="container">
+            <div class="row">
+                <div class="sc_section bg_tint_light">
+                    <div class="sc_content content_wrap">
+                        <div class="sc_section bg_tint_none aligncenter">
+                            <h2 class="sc_title style_1">LAST COURSES</h2>
+                            <h5 class="sc_undertitle style_3">Choose your style</h5>
+                            <div class="sc_team sc_team_style_4">
+                                <div class="sc_columns columns_wrap">
+                                    @foreach($last as $rs)
+                                        <div class="column-1_3">
+                                            <div class="sc_team_item sc_team_item_1 odd first">
+                                                <div class="sc_team_item_avatar">
+                                                    <img alt="team-1-style4.png" src="{{Storage::url($rs->image)}}" style="height: 200px">
+                                                    <div class="sc_team_item_hover">
+                                                        <div class="sc_team_item_socials">
+                                                            <div class="sc_socials sc_socials_size_small">
+                                                                <div class="sc_socials_item">
+                                                                    <a href="{{route('categorycourses',['id'=>$rs->id])}}" target="_blank"
+                                                                       class="social_icons social_facebook icons">
+                                                                        <span class="icon-file73"></span>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="sc_team_item_info">
+                                                    <h6 class="sc_team_item_title">
+                                                        <a href="{{route('categorycourses',['id'=>$rs->id])}}">{{$rs->title}}</a>
+                                                    </h6>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    @endforeach
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

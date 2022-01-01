@@ -9,6 +9,6 @@
             <a class="nav-item nav-link" href="#"><i class="icon-comment"></i> MY REVIEWS &nbsp;&nbsp;&nbsp;</a>
             <a class="nav-item nav-link" href="#"><i class="icon-mail"></i> MY MESSAGES &nbsp;&nbsp;&nbsp;</a>
             <a class="nav-item nav-link" href="#"><i class="revicon-logout"></i>LOGOUT &nbsp;&nbsp;&nbsp;</a>
-        </div>
+        </div><br><hr>
     </div>
 </nav>

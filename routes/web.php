@@ -31,6 +31,9 @@ Route::get('/contact', [HomeController::class, 'contact'])->name('contact');
 Route::post('/sendmessage', [HomeController::class, 'sendmessage'])->name('sendmessage');
 Route::get('/course/{id}', [HomeController::class, 'course'])->name('course');
 Route::get('/categorycourses/{id}', [HomeController::class, 'categorycourses'])->name('categorycourses');
+Route::get('/buytocourse/{id}', [HomeController::class, 'buytocourse'])->name('buytocourse');
+Route::post('/getcourse', [HomeController::class, 'getcourse'])->name('getcourse');
+Route::get('/courselist/{search}', [HomeController::class, 'courselist'])->name('courselist');
 
 Route::get('/test/{id}/{name}', [HomeController::class, 'test'])->whereNumber('id')->whereAlpha('name')->name('test');
 

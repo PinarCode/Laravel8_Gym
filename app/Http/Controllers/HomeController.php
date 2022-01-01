@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Course;
+use App\Models\Image;
 use App\Models\Message;
 use App\Models\Setting;
 use Illuminate\Http\Request;
@@ -22,20 +23,53 @@ class HomeController extends Controller
     public function index(){
 
         $setting = Setting::first();
-        $slider = Course::select('id','title','image','price')->limit(4)->get();
+        $slider = Course::select('id','title','image','price','month')->limit(3)->get();
+        $popular = Course::select('id','title','image','price','month')->limit(3)->inRandomOrder()->get();
+        $last = Course::select('id','title','image','price','month')->limit(3)->orderByDesc('id')->get();
         //print_r($slider);
         //exit();
         $data = [
             'setting'=>$setting,
-            'slider'=>$slider
+            'slider'=>$slider,
+            'popular'=>$popular,
+            'last'=>$last
         ];
         return  view('home.index',$data);
     }
 
     public function course($id){
         $data = Course::find($id);
+        $datalist = Image::where('course_id',$id)->get();
+        //print_r($data);
+        //exit();
+        return  view('home.course_detail',['data'=>$data,'datalist'=>$datalist]);
+    }
+
+    public function buytocourse($id){
+        echo "Buy to course <br>";
+        $data = Course::find($id);
         print_r($data);
         exit();
+    }
+
+    public function getcourse(Request $request){
+        $search=$request->input('search');
+
+        $count = Course::where('title','like','%'.$search.'%')->get()->count();
+        if($count==1)
+        {
+            $data = Course::where('title','like','%'.$search.'%')->first();
+            return redirect()->route('course',['id'=>$data->id]);
+        }
+        else
+        {
+            return redirect()->route('courselist',['search'=>$search]);
+        }
+    }
+
+    public function courselist($search){
+        $datalist = Course::where('title','like','%'.$search.'%')->get();
+        return view('home.search_courses',['search'=>$search,'datalist'=>$datalist]);
     }
 
     public function categorycourses($id){
