@@ -38,6 +38,14 @@ class HomeController extends Controller
         exit();
     }
 
+    public function categorycourses($id){
+        $datalist = Course::where('category_id',$id)->get();
+        $data = Course::find($id);
+        //print_r($data);
+        //exit();
+        return  view('home.category_courses',['data'=>$data,'datalist'=>$datalist]);
+    }
+
     public function aboutus(){
         $setting = Setting::first();
         return  view('home.about',['setting'=>$setting]);

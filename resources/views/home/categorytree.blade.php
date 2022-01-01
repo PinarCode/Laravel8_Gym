@@ -10,7 +10,7 @@
             <hr>
         @else
             <li class="menu-item" style="color: black">
-                    <span>{{ $subcategory->title}} </span>
+                    <a href="{{route('categorycourses',['id'=>$subcategory->id])}}">{{ $subcategory->title}} </a>
             </li>
         @endif
     </ul>
