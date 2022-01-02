@@ -73,11 +73,12 @@ class HomeController extends Controller
     }
 
     public function categorycourses($id){
+
         $datalist = Course::where('category_id',$id)->get();
-        $data = Course::find($id);
+        $data = Category::find($id);
         //print_r($data);
         //exit();
-        return  view('home.category_courses',['data'=>$data,'datalist'=>$datalist]);
+        return  view('home.category_courses',['data' => $data, 'datalist' => $datalist]);
     }
 
     public function aboutus(){
@@ -92,6 +93,10 @@ class HomeController extends Controller
 
     public function fag(){
         return  view('home.about');
+    }
+
+    public function videoplayer(){
+        return  view('home.video_player');
     }
 
     public function contact(){

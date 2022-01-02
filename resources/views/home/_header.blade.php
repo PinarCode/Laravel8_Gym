@@ -16,9 +16,9 @@
             <div class="search_wrap search_style_regular" title="Open/close search form">
                 <a href="#" class="search_icon icon-search-1"> </a>
                 <div class="search_form_wrap">
-                    <form role="search" method="post" class="search_form" action="{{route('getcourse')}}">
+                    <form class="search_form" action="{{route('getcourse')}}"  method="post">
                         @csrf
-                        <button type="submit" class="search_submit icon-zoom-1" title="Start search"></button>
+                        <button type="submit" class="search_submit icon-zoom-1"></button>
                         @livewire('search')
                     </form>
                     @livewireScripts
@@ -41,12 +41,12 @@
                             <span>Aboutus</span>
                         </a>
                     </li>
-                    <li class="menu-item menu-item-has-children">
+                    <li class="menu-item menu-item-has-children" >
                         <a href="classes.html"><span>Categories</span></a>
                         <ul class="sub-menu">
                             @foreach($parentCategories as $rs)
                                 <li class="menu-item menu-item-has-children">
-                                    <a href="#"><span>{{$rs->title}}</span></a>
+                                    <a href="{{route('categorycourses',['id'=>$rs->id])}}"><span>{{$rs->title}}</span></a>
                                     @if(count($rs->children))
                                         @include('home.categorytree',['children' => $rs->children])
                                     @endif

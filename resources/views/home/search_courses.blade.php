@@ -10,7 +10,7 @@
             <div class="content_wrap">
                 <a class="breadcrumbs_item home" href="{{route('homepage')}}">Home</a>
                 <span class="breadcrumbs_delimiter"></span>
-                <a class="breadcrumbs_item home" href="{{$search}}">Course List</a>
+                <a class="breadcrumbs_item home" href="#">{{$search}}</a>
                 <span class="breadcrumbs_delimiter"></span>
                 <span class="breadcrumbs_item current">{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($data, $data->title)}}</span>
             </div>

@@ -136,7 +136,7 @@
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
                                                             <div class="sc_socials_item">
-                                                                <a href="{{route('categorycourses',['id'=>$rs->id])}}" target="_blank"
+                                                                <a href="{{route('categorycourses',['id'=>$rs->id])}}"
                                                                    class="social_icons social_facebook icons">
                                                                     <span class="icon-file73"></span>
                                                                 </a>
@@ -180,7 +180,7 @@
                                                         <div class="sc_team_item_socials">
                                                             <div class="sc_socials sc_socials_size_small">
                                                                 <div class="sc_socials_item">
-                                                                    <a href="{{route('categorycourses',['id'=>$rs->id])}}" target="_blank"
+                                                                    <a href="{{route('categorycourses',['id'=>$rs->id])}}"
                                                                        class="social_icons social_facebook icons">
                                                                         <span class="icon-file73"></span>
                                                                     </a>
@@ -219,7 +219,7 @@
                                     <h1 class="sc_title style_1">30-MINUTE CIRCUIT PROGRAM</h1>
                                     <h4 class="sc_undertitle style_2">World-class personal trainers. World-class
                                         results.</h4>
-                                    <a href="#" target="https://youtu.be/kg-clmeHBrM" rel="prettyPhoto"
+                                    <a href="{{route('videoplayer')}}" rel="prettyPhoto"
                                        class="sc_button sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_large  sc_button_iconed inherit popup_link">WATCH
                                         THE TRAINING VIDEO</a>
                                 </div>

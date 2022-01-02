@@ -89,7 +89,7 @@
                          data-endelementdelay="0.1"
                          data-endspeed="300"
                     >
-                        {{$rs->month}} months -> {{$rs->price}}t
+                        {{$rs->month}} months -> {{$rs->price}}₺
                     </div>
                     <!-- LAYER NR. 8 -->
                     <div class="tp-caption black tp-fade tp-resizeme"

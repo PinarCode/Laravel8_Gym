@@ -171,5 +171,15 @@
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/swiper/idangerous.swiper-2.7.js'></script>
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/swiper/idangerous.swiper.scrollbar-2.4.js'></script>
 
+<script type='text/javascript' src='{{ asset('assets') }}/js/vendor/mediaelement/mediaelement-and-player.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/vendor/core.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/vendor/widget.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/vendor/accordion.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/custom/core.googlemap.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/vendor/tabs.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/vendor/effect.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/vendor/effect-fade.min.js'></script>
+<script type='text/javascript' src='{{ asset('assets') }}/js/vendor/diagram/chart.min.js'></script>
+
 <!--<script type='text/javascript' src='custom_tools/js/skin.customizer.js'></script>-->
 <!--<script type='text/javascript' src='custom_tools/js/front.customizer.js'></script>-->
