@@ -8,10 +8,6 @@
                 @include('home.categorytree',['children' => $subcategory->children])
             </ul>
             <hr>
-        @else
-            <li class="menu-item" style="color: black">
-                    <a href="{{route('categorycourses',['id'=>$subcategory->id])}}">{{ $subcategory->title}} </a>
-            </li>
         @endif
     </ul>
 @endforeach

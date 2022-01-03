@@ -136,7 +136,7 @@
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
                                                             <div class="sc_socials_item">
-                                                                <a href="{{route('categorycourses',['id'=>$rs->id])}}"
+                                                                <a href="{{route('course',['id'=>$rs->id])}}"
                                                                    class="social_icons social_facebook icons">
                                                                     <span class="icon-file73"></span>
                                                                 </a>
@@ -147,7 +147,7 @@
                                             </div>
                                             <div class="sc_team_item_info">
                                                 <h6 class="sc_team_item_title">
-                                                    <a href="{{route('categorycourses',['id'=>$rs->id])}}">{{$rs->title}}</a>
+                                                    <a href="{{route('course',['id'=>$rs->id])}}">{{$rs->title}}</a>
                                                 </h6>
                                             </div>
                                         </div>
@@ -180,7 +180,7 @@
                                                         <div class="sc_team_item_socials">
                                                             <div class="sc_socials sc_socials_size_small">
                                                                 <div class="sc_socials_item">
-                                                                    <a href="{{route('categorycourses',['id'=>$rs->id])}}"
+                                                                    <a href="{{route('course',['id'=>$rs->id])}}"
                                                                        class="social_icons social_facebook icons">
                                                                         <span class="icon-file73"></span>
                                                                     </a>
@@ -191,7 +191,7 @@
                                                 </div>
                                                 <div class="sc_team_item_info">
                                                     <h6 class="sc_team_item_title">
-                                                        <a href="{{route('categorycourses',['id'=>$rs->id])}}">{{$rs->title}}</a>
+                                                        <a href="{{route('course',['id'=>$rs->id])}}">{{$rs->title}}</a>
                                                     </h6>
                                                 </div>
                                             </div>
