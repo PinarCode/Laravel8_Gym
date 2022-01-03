@@ -12,7 +12,8 @@
             <div class="content_wrap">
                 <a class="breadcrumbs_item home" href="{{route('homepage')}}">Home</a>
                 <span class="breadcrumbs_delimiter"></span>
-                <span class="breadcrumbs_item current">{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($data->category, $data->category->title)}}</span>
+                <span
+                    class="breadcrumbs_item current">{{\App\Http\Controllers\Admin\CategoryController::getParentsTree($data->category, $data->category->title)}}</span>
                 <span class="breadcrumbs_delimiter">{{$data->title}}</span>
 
             </div>
@@ -28,30 +29,34 @@
                     <div class="container">
                         <div class="row">
                             <article class="post_item post_item_excerpt post_featured_left post">
-                                    <div class="post_featured bg_image">
-                                        <div class="sc_slider sc_slider_swiper swiper-slider-container sc_slider_controls sc_slider_pagination" data-old-width="750" data-old-height="422" data-interval="8759">
+                                <div class="post_featured bg_image">
+                                    <div
+                                        class="sc_slider sc_slider_swiper swiper-slider-container sc_slider_controls sc_slider_pagination"
+                                        data-old-width="750" data-old-height="422" data-interval="8759">
 
-                                            <div class="slides swiper-wrapper">
+                                        <div class="slides swiper-wrapper">
+                                            <div class="swiper-slide">
+                                                <a href="#">
+                                                    <img alt="Depositphotos_25234873_original.jpg"
+                                                         src="{{Storage::url($data->image)}}" style="height: 320px">
+                                                </a>
+                                            </div>
+                                            @foreach($datalist as $rs)
                                                 <div class="swiper-slide">
                                                     <a href="#">
-                                                        <img alt="Depositphotos_25234873_original.jpg" src="{{Storage::url($data->image)}}" style="height: 320px">
+                                                        <img alt="Depositphotos_25234873_original.jpg"
+                                                             src="{{Storage::url($rs->image)}}" style="height: 320px">
                                                     </a>
                                                 </div>
-                                                @foreach($datalist as $rs)
-                                                <div class="swiper-slide">
-                                                    <a href="#">
-                                                        <img alt="Depositphotos_25234873_original.jpg" src="{{Storage::url($rs->image)}}" style="height: 320px">
-                                                    </a>
-                                                </div>
-                                                @endforeach
-                                            </div>
-                                            <div class="sc_slider_controls_wrap">
-                                                <a class="sc_slider_prev" href="#"> </a>
-                                                <a class="sc_slider_next" href="#"> </a>
-                                            </div>
-                                            <div class="sc_slider_pagination_wrap"></div>
+                                            @endforeach
                                         </div>
-                                    </div>&nbsp;&nbsp;
+                                        <div class="sc_slider_controls_wrap">
+                                            <a class="sc_slider_prev" href="#"> </a>
+                                            <a class="sc_slider_next" href="#"> </a>
+                                        </div>
+                                        <div class="sc_slider_pagination_wrap"></div>
+                                    </div>
+                                </div>&nbsp;&nbsp;
                                 <div class="post_date">{{$data->month}} months -> {{$data->price}}₺</div>
                                 <div class="post_info">
                                     <div class="post_rating reviews_summary blog_reviews">
@@ -101,7 +106,8 @@
                                     <div class="post_descr">
                                         <p><b>{{$data->description}}</b></p>
                                         <a href="{{route('buytocourse',['id'=>$rs->id])}}"
-                                           class="sc_button sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_small">SIGN IN COURSE</a>
+                                           class="sc_button sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_small">SIGN
+                                            IN COURSE</a>
                                     </div>
                                 </div>
                             </article>
@@ -114,20 +120,93 @@
                                                 <a href="#sc_tab_14_1" class="theme_button" id="sc_tab_14_1_tab">DETAIL</a>
                                             </li>
                                             <li class="sc_tabs_title">
-                                                <a href="#sc_tab_14_2" class="theme_button" id="sc_tab_14_2_tab">Tab 2</a>
+                                                <a href="#sc_tab_14_2" class="theme_button" id="sc_tab_14_2_tab">DESCRIPTION</a>
                                             </li>
                                             <li class="sc_tabs_title last">
-                                                <a href="#sc_tab_14_3" class="theme_button" id="sc_tab_14_3_tab">Tab 3</a>
+                                                <a href="#sc_tab_14_3" class="theme_button" id="sc_tab_14_3_tab">REVIEW</a>
                                             </li>
                                         </ul>
                                         <div id="sc_tab_14_1" class="sc_tabs_content odd first">
                                             <p>{!! $data->detail !!}</p>
                                         </div>
                                         <div id="sc_tab_14_2" class="sc_tabs_content even">
-                                            <p>Donec mollis risus mauris. Morbi pharetra arcu mi, ultricies tincidunt erat tempor a. Integer blandit velit turpis, a facilisis arcu varius vel. Sed faucibus vestibulum ante quis volutpat. Etiam aliquet eros augue, interdum tincidunt risus tristique quis. Curabitur et arcu et mi semper vehicula ut in massa</p>
+                                            <p>{!! $data->description !!}</p>
                                         </div>
                                         <div id="sc_tab_14_3" class="sc_tabs_content odd">
-                                            <p>Sed orci nibh, ullamcorper vitae scelerisque non, fermentum eu diam. Mauris vitae libero efficitur, lacinia nibh scelerisque, pellentesque leo. Vivamus quis nisi elit. Cras egestas rhoncus pulvinar. Curabitur vitae augue sollicitudin, tincidunt ex sed, dignissim quam.</p>
+                                            <section class="no_padding content_wrap">
+                                                <div class="container">
+                                                    <div class="row">
+                                                        <div class="comments_wrap">
+                                                            <div id="comments" class="comments_list_wrap">
+                                                                <h3 class="section_title comments_list_title">1 Comment</h3>
+                                                                <ul class="comments_list">
+                                                                    <li class="comment even thread-even depth-1 comment_item">
+                                                                        <div class="comment_author_avatar">
+                                                                            <img alt='' src='{{ asset('assets') }}/images/75x75.png' srcset='{{ asset('assets') }}/images/75x75.png' class='avatar avatar-75 photo'/>
+                                                                        </div>
+                                                                        <div class="comment_content">
+                                                                            <div class="comment_info">
+                                                                                <span class="comment_author">AXIOM_admin</span>
+                                                                                <span class="comment_date">
+                                                                                    <span class="comment_date_label">Posted</span>
+                                                                                    <span class="comment_date_value">February 10, 2015</span>
+                                                                                </span>
+                                                                                <span class="comment_time">1:17 pm</span>
+                                                                            </div>
+                                                                            <div class="comment_text_wrap">
+                                                                                <div class="comment_text">
+                                                                                    <p>John is a wonderful teacher. His
+                                                                                        lessons are always interesting
+                                                                                        and informative. I am happy to
+                                                                                        attend his lectures.</p>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="comment_reply">
+                                                                                <a class='comment-reply-link' href='#respond' onclick='return addComment.moveForm( "comment-7", "7", "respond", "553" )'
+                                                                                   aria-label='Reply to AXIOM_admin'>Reply</a>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <div class="comments_pagination">
+                                                                </div>
+                                                            </div>
+                                                            <div class="comments_form_wrap">
+                                                                <h3 class="section_title comments_form_title">Add Comment</h3>
+                                                                <div class="comments_form">
+                                                                    <div id="respond" class="comment-respond">
+                                                                        <h3 id="reply-title" class="comment-reply-title">
+                                                                            <small>
+                                                                                <a rel="nofollow" id="cancel-comment-reply-link" href="#respond">Cancel reply</a>
+                                                                            </small>
+                                                                        </h3>
+                                                                        <form action="http://gym.axiomthemes.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+                                                                            <p class="comments_notes">Your email address
+                                                                                will not be published. Required fields
+                                                                                are marked *</p>
+                                                                            <div class="columns_wrap">
+                                                                                <div class="comments_field comments_site column-1_1">
+                                                                                    <label for="url" class="optional">Subject</label>
+                                                                                    <input id="url" name="url" type="text" placeholder="Subject" value="" size="30" aria-required="true"/>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="comments_field comments_message">
+                                                                                <label for="comment" class="required">Your Review</label>
+                                                                                <textarea id="comment" name="comment" placeholder="Your Review" aria-required="true"></textarea>
+                                                                            </div>
+                                                                            <p class="form-submit">
+                                                                                <input name="submit" type="submit" id="send_comment" class="submit" value="Post Review"/>
+                                                                                <input type='hidden' name='comment_post_ID' value='553' id='comment_post_ID'/>
+                                                                                <input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
+                                                                            </p>
+                                                                        </form>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </section>
                                         </div>
                                     </div>
                                 </div>

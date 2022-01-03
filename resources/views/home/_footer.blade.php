@@ -151,9 +151,6 @@
 </div>
 </div>
 
-
-
-
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/jquery-1.11.3.min.js'></script>
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/jquery-migrate.min.js'></script>
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/revslider/rs-plugin/js/jquery.themepunch.tools.min.js'></script>
@@ -175,7 +172,6 @@
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/core.min.js'></script>
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/widget.min.js'></script>
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/accordion.min.js'></script>
-<script type='text/javascript' src='{{ asset('assets') }}/js/custom/core.googlemap.js'></script>
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/tabs.min.js'></script>
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/effect.min.js'></script>
 <script type='text/javascript' src='{{ asset('assets') }}/js/vendor/effect-fade.min.js'></script>

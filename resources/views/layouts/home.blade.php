@@ -19,7 +19,6 @@
     <style id='themerex-custom-style-inline-css' type='text/css'></style>
     <link rel='stylesheet' href='{{ asset('assets') }}/css/responsive.css' type='text/css' media='all'/>
 
-
     <!--<link rel='stylesheet' href='custom_tools/css/front.customizer.css' type='text/css' media='all'/>-->
     @yield('css')
     @yield('headerjs')
