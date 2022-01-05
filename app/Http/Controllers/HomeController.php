@@ -6,6 +6,7 @@ use App\Models\Category;
 use App\Models\Course;
 use App\Models\Image;
 use App\Models\Message;
+use App\Models\Review;
 use App\Models\Setting;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,6 +19,14 @@ class HomeController extends Controller
 
     public static function getsetting(){
         return Setting::first();
+    }
+
+    public static function countreview($id){
+        return Review::where('course_id', $id)->count();
+    }
+
+    public static function avrgreview($id){
+        return Review::where('course_id', $id)->average('rate');
     }
 
     public function index(){
@@ -40,9 +49,10 @@ class HomeController extends Controller
     public function course($id){
         $data = Course::find($id);
         $datalist = Image::where('course_id',$id)->get();
+        $reviews = Review::where('course_id',$id)->get();
         //print_r($data);
         //exit();
-        return  view('home.course_detail',['data'=>$data,'datalist'=>$datalist]);
+        return  view('home.course_detail',['data'=>$data,'datalist'=>$datalist,'reviews'=>$reviews]);
     }
 
     public function buytocourse($id){

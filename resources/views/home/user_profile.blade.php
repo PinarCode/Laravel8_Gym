@@ -23,9 +23,7 @@
                 <section class="no_padding">
                     <div class="container">
                         <div class="row">
-                            <article class="post_item post_item_excerpt post_format_standard post">
-                                @include('profile.show')
-                            </article>
+                            @include('profile.show')
                         </div>
                     </div>
                 </section>

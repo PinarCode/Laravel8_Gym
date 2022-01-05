@@ -62,39 +62,23 @@
                                     <div class="post_rating reviews_summary blog_reviews">
                                         <div class="criteria_summary criteria_row">
                                             <div class="reviews_stars reviews_style_stars" data-mark="92">
+                                                @php
+                                                    $avgrev = \App\Http\Controllers\HomeController::avrgreview($data->id);
+                                                    $countreview = \App\Http\Controllers\HomeController::countreview($data->id);
+                                                @endphp
                                                 <div class="reviews_stars_wrap">
                                                     <div class="reviews_stars_bg">
-                                                        <span class="reviews_star"></span>
-                                                        <span class="reviews_star"></span>
-                                                        <span class="reviews_star"></span>
-                                                        <span class="reviews_star"></span>
-                                                        <span class="reviews_star"></span>
-                                                    </div>
-                                                    <div class="reviews_stars_hover">
-                                                        <span class="reviews_star"></span>
-                                                        <span class="reviews_star"></span>
-                                                        <span class="reviews_star"></span>
-                                                        <span class="reviews_star"></span>
-                                                        <span class="reviews_star"></span>
+                                                        <i class="reviews_star @if ($avgrev<1) -o empty @endif"></i>
+                                                        <i class="reviews_star @if ($avgrev<2) -o empty @endif"></i>
+                                                        <i class="reviews_star @if ($avgrev<3) -o empty @endif"></i>
+                                                        <i class="reviews_star @if ($avgrev<4) -o empty @endif"></i>
+                                                        <i class="reviews_star @if ($avgrev<5) -o empty @endif"></i>
                                                     </div>
                                                 </div>
-                                                <div class="reviews_value">92</div>
+                                                <div class="reviews_value"><a href="#sc_tab_14_3">{{$countreview}} Review(s) {{$avgrev}} / Add Review</a></div>
                                             </div>
                                         </div>
                                     </div>
-                                    <span class="post_info_item post_info_counters">
-											<a class="post_counters_item post_counters_views icon-eye-1"
-                                               title="Views - 262" href="#">262</a>
-											<a class="post_counters_item post_counters_comments icon-comment"
-                                               title="Comments - 0" href="#">
-												<span class="post_counters_number">0</span>
-											</a>
-											<a class="post_counters_item post_counters_likes icon-heart-1 enabled"
-                                               title="Like" href="#" data-postid="38" data-likes="0"
-                                               data-title-like="Like" data-title-dislike="Dislike">
-												<span class="post_counters_number">0</span>
-											</a>
-										</span>
                                 </div>
                                 <h3 class="post_title">
                                     <a href="#">
@@ -123,7 +107,7 @@
                                                 <a href="#sc_tab_14_2" class="theme_button" id="sc_tab_14_2_tab">DESCRIPTION</a>
                                             </li>
                                             <li class="sc_tabs_title last">
-                                                <a href="#sc_tab_14_3" class="theme_button" id="sc_tab_14_3_tab">REVIEW</a>
+                                                <a href="#sc_tab_14_3" class="theme_button" id="sc_tab_14_3_tab">REVIEWS ({{ $countreview }})</a>
                                             </li>
                                         </ul>
                                         <div id="sc_tab_14_1" class="sc_tabs_content odd first">
@@ -137,42 +121,39 @@
                                                 <div class="container">
                                                     <div class="row">
                                                         <div class="comments_wrap">
+                                                            @foreach($reviews as $rs)
                                                             <div id="comments" class="comments_list_wrap">
-                                                                <h3 class="section_title comments_list_title">1 Comment</h3>
-                                                                <ul class="comments_list">
-                                                                    <li class="comment even thread-even depth-1 comment_item">
-                                                                        <div class="comment_author_avatar">
-                                                                            <img alt='' src='{{ asset('assets') }}/images/75x75.png' srcset='{{ asset('assets') }}/images/75x75.png' class='avatar avatar-75 photo'/>
-                                                                        </div>
+                                                                <div class="comments_list">
+                                                                    <div class="comment even thread-even depth-1 comment_item">
                                                                         <div class="comment_content">
                                                                             <div class="comment_info">
-                                                                                <span class="comment_author">AXIOM_admin</span>
+                                                                                <span class="comment_author">{{$rs->name}}</span>
                                                                                 <span class="comment_date">
-                                                                                    <span class="comment_date_label">Posted</span>
-                                                                                    <span class="comment_date_value">February 10, 2015</span>
+                                                                                    <span class="comment_date_value">{{$rs->created_at}}</span>
                                                                                 </span>
-                                                                                <span class="comment_time">1:17 pm</span>
+                                                                                <div class="reviews_stars_bg">
+                                                                                    <i class="reviews_star @if ($rs->rate<1) -o empty @endif"></i>
+                                                                                    <i class="reviews_star @if ($rs->rate<2) -o empty @endif"></i>
+                                                                                    <i class="reviews_star @if ($rs->rate<3) -o empty @endif"></i>
+                                                                                    <i class="reviews_star @if ($rs->rate<4) -o empty @endif"></i>
+                                                                                    <i class="reviews_star @if ($rs->rate<5) -o empty @endif"></i>
+                                                                                </div>
                                                                             </div>
                                                                             <div class="comment_text_wrap">
                                                                                 <div class="comment_text">
-                                                                                    <p>John is a wonderful teacher. His
-                                                                                        lessons are always interesting
-                                                                                        and informative. I am happy to
-                                                                                        attend his lectures.</p>
+                                                                                    <strong>{{$rs->subject}}</strong>
+                                                                                    <p>{{$rs->review}}</p>
                                                                                 </div>
                                                                             </div>
-                                                                            <div class="comment_reply">
-                                                                                <a class='comment-reply-link' href='#respond' onclick='return addComment.moveForm( "comment-7", "7", "respond", "553" )'
-                                                                                   aria-label='Reply to AXIOM_admin'>Reply</a>
-                                                                            </div>
                                                                         </div>
-                                                                    </li>
-                                                                </ul>
+                                                                    </div>
+                                                                </div>
                                                                 <div class="comments_pagination">
                                                                 </div>
                                                             </div>
+                                                            @endforeach
                                                             <div class="comments_form_wrap">
-                                                                <h3 class="section_title comments_form_title">Add Comment</h3>
+                                                                <h4 class="section_title comments_form_title">Write Your Review</h4>
                                                                 <div class="comments_form">
                                                                     <div id="respond" class="comment-respond">
                                                                         <h3 id="reply-title" class="comment-reply-title">
@@ -180,26 +161,7 @@
                                                                                 <a rel="nofollow" id="cancel-comment-reply-link" href="#respond">Cancel reply</a>
                                                                             </small>
                                                                         </h3>
-                                                                        <form action="http://gym.axiomthemes.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
-                                                                            <p class="comments_notes">Your email address
-                                                                                will not be published. Required fields
-                                                                                are marked *</p>
-                                                                            <div class="columns_wrap">
-                                                                                <div class="comments_field comments_site column-1_1">
-                                                                                    <label for="url" class="optional">Subject</label>
-                                                                                    <input id="url" name="url" type="text" placeholder="Subject" value="" size="30" aria-required="true"/>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="comments_field comments_message">
-                                                                                <label for="comment" class="required">Your Review</label>
-                                                                                <textarea id="comment" name="comment" placeholder="Your Review" aria-required="true"></textarea>
-                                                                            </div>
-                                                                            <p class="form-submit">
-                                                                                <input name="submit" type="submit" id="send_comment" class="submit" value="Post Review"/>
-                                                                                <input type='hidden' name='comment_post_ID' value='553' id='comment_post_ID'/>
-                                                                                <input type='hidden' name='comment_parent' id='comment_parent' value='0'/>
-                                                                            </p>
-                                                                        </form>
+                                                                        @livewire('review',['id'=>$data->id])
                                                                     </div>
                                                                 </div>
                                                             </div>

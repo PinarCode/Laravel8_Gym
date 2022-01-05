@@ -21,7 +21,9 @@
                         <button type="submit" class="search_submit icon-zoom-1"></button>
                         @livewire('search')
                     </form>
-                    @livewireScripts
+                    @section('footerjs')
+                        @livewireScripts
+                    @endsection
                 </div>
                 <div class="search_results widget_area bg_tint_light">
                     <a class="search_results_close icon-cancel-1"> </a>
@@ -81,8 +83,8 @@
 
                         <ul class="dropdown-menu">
                             <li><a href="{{route('myprofile')}}"><i class="icon-user"></i> My Account</a></li>
-                            <li><a href="#"> <i class="icon-heart-2"></i> My WishList</a></li>
                             <li><a href="#"> <i class="icon-comment"></i> My Review</a></li>
+                            <li><a href="#"> <i class="icon-heart-2"></i> My WishList</a></li>
                             <li><a href="#"><i class="icon-file73"></i> Compare</a></li>
                             <li><a href="#"> <i class="icon-check-2"></i> Checkout</a></li>
                             <li><a href="{{route('logout')}}"><i class="revicon-logout"></i> Logout</a></li>
