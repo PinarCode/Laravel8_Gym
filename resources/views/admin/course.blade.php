@@ -31,8 +31,7 @@
                                                     <th>IMAGE</th>
                                                     <th>GALLERY</th>
                                                     <th>STATUS</th>
-                                                    <th>EDIT</th>
-                                                    <th>DELETE</th>
+                                                    <th colspan="2">ACTIONS</th>
                                                 </tr>
                                                 </thead>
                                                 <tbody>

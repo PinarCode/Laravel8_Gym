@@ -29,6 +29,11 @@
                     <span class="nav-text">Reviews</span>
                 </a>
             </li>
+            <li><a href="{{route('admin_faq')}}" class="ai-icon" aria-expanded="false">
+                    <i class="flaticon-381-help-1"></i>
+                    <span class="nav-text">FAQ</span>
+                </a>
+            </li>
             <li>
                 <a class="ai-icon" href="{{route('admin_setting')}}" aria-expanded="false">
                     <i class="flaticon-381-settings-2"></i>
