@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use App\Models\Course;
+use App\Models\Faq;
 use App\Models\Image;
 use App\Models\Message;
 use App\Models\Review;
@@ -101,8 +102,9 @@ class HomeController extends Controller
         return  view('home.references',['setting'=>$setting]);
     }
 
-    public function fag(){
-        return  view('home.about');
+    public function faq(){
+        $datalist = Faq::all()->sortBy('position');
+        return  view('home.faq',['datalist'=>$datalist]);
     }
 
     public function videoplayer(){

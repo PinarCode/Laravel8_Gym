@@ -62,7 +62,7 @@
                         </a>
                     </li>
                     <li class="menu-item menu-item-has-children">
-                        <a href="{{route('fag')}}">
+                        <a href="{{route('faq')}}">
                             <span>FAQ</span>
                         </a>
                     </li>
