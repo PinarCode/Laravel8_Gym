@@ -6,8 +6,8 @@
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="{{route('myprofile')}}"><i class="icon-user"></i> MY PROFILE &nbsp;&nbsp;&nbsp;</a>
             <a class="nav-item nav-link" href="#"><i class="icon-sporting"></i> MY ORDERS &nbsp;&nbsp;&nbsp;</a>
-            <a class="nav-item nav-link" href="#"><i class="icon-comment"></i> MY REVIEWS &nbsp;&nbsp;&nbsp;</a>
-            <a class="nav-item nav-link" href="#"><i class="icon-mail"></i> MY MESSAGES &nbsp;&nbsp;&nbsp;</a>
+            <a class="nav-item nav-link" href="{{route('myreviews')}}"><i class="icon-comment"></i> MY REVIEWS &nbsp;&nbsp;&nbsp;</a>
+            <a class="nav-item nav-link" href="{{route('user_courses')}}"><i class="icon-new-2"></i> MY COURSE &nbsp;&nbsp;&nbsp;</a>
             <a class="nav-item nav-link" href="#"><i class="revicon-logout"></i>LOGOUT &nbsp;&nbsp;&nbsp;</a>
         </div><br><hr>
     </div>

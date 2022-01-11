@@ -3,6 +3,7 @@
 use App\Http\Controllers\Admin\FaqController;
 use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\ReviewController;
+use App\Http\Controllers\CourseController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
@@ -109,6 +110,26 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
     Route::get('/destroymyreview/{id}', [UserController::class, 'destroymyreview'])->name('user_review_delete');
 });
 
+Route::middleware('auth')->prefix('user')->namespace('user')->group(function () {
+
+    Route::prefix('course')->group(function() {
+        Route::get('/', [CourseController::class, 'index'])->name('user_courses');
+        Route::get('create', [CourseController::class, 'create'])->name('user_course_add');
+        Route::post('store', [CourseController::class, 'store'])->name('user_course_store');
+        Route::get('edit/{id}', [CourseController::class, 'edit'])->name('user_course_edit');
+        Route::post('update/{id}', [CourseController::class, 'update'])->name('user_course_update');
+        Route::get('delete/{id}', [CourseController::class, 'destroy'])->name('user_course_delete');
+        Route::get('show', [CourseController::class, 'show'])->name('user_course_show');
+    });
+
+    #Course image gallery
+    Route::prefix('image')->group(function() {
+        Route::get('create/{course_id}', [\App\Http\Controllers\Admin\ImageController::class, 'create'])->name('user_image_add');
+        Route::post('store/{course_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('user_image_store');
+        Route::get('delete/{id}/{course_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('user_image_delete');
+        Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('user_image_show');
+    });
+});
 
 Route::get('/admin/login', [HomeController::class, 'login'])->name('admin_login');
 Route::post('/admin/logincheck', [HomeController::class, 'logincheck'])->name('admin_logincheck');
