@@ -10,7 +10,7 @@
             <div class="content_wrap">
                 <a class="breadcrumbs_item home" href="{{route('homepage')}}">Home</a>
                 <span class="breadcrumbs_delimiter"></span>
-                <span class="breadcrumbs_item current">User Course</span>
+                <span class="breadcrumbs_item current">My Account</span>
             </div>
         </div>
         <div class="content_wrap">
@@ -26,8 +26,9 @@
                             <div class="col-lg-12">
                                 <div class="card">
                                     <div class="card-header">
-                                        <span class="btn btn-primary"><a href="{{route('user_course_add')}}">Add Course</a></span>
-                                    </div>
+                                        <span class="sc_button sc_button_square sc_button_style_filled sc_button_bg_color2 sc_button_size_medium  sc_button_iconed"><a href="{{route('user_course_add')}}">Add Course</a></span>
+
+                                    </div><br>
                                     <div class="card-body pb-1">
                                         <div class="col-lg-12">
                                             <div class="card">
