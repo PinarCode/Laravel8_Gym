@@ -25,7 +25,6 @@
                         <div class="row">
                             <div class="sc_section bg_tint_none">
                                 <div class="sc_line sc_line_style_solid"></div>
-                                <h2 class="sc_title style_3">TABLES</h2>
                                 <div class="sc_table style_1">
                                     <table>
                                         <thead>
