@@ -5,6 +5,7 @@ use App\Http\Controllers\Admin\MessageController;
 use App\Http\Controllers\Admin\ReviewController;
 use App\Http\Controllers\CourseController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\OrderController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -112,6 +113,7 @@ Route::middleware('auth')->prefix('myaccount')->namespace('myaccount')->group(fu
 
 Route::middleware('auth')->prefix('user')->namespace('user')->group(function () {
 
+    #course
     Route::prefix('course')->group(function() {
         Route::get('/', [CourseController::class, 'index'])->name('user_courses');
         Route::get('create', [CourseController::class, 'create'])->name('user_course_add');
@@ -128,6 +130,17 @@ Route::middleware('auth')->prefix('user')->namespace('user')->group(function () 
         Route::post('store/{course_id}', [\App\Http\Controllers\Admin\ImageController::class, 'store'])->name('user_image_store');
         Route::get('delete/{id}/{course_id}', [\App\Http\Controllers\Admin\ImageController::class, 'destroy'])->name('user_image_delete');
         Route::get('show', [\App\Http\Controllers\Admin\ImageController::class, 'show'])->name('user_image_show');
+    });
+
+    #Order
+    Route::prefix('order')->group(function() {
+        Route::get('/', [OrderController::class, 'index'])->name('user_order');
+        Route::get('create', [OrderController::class, 'create'])->name('user_order_add');
+        Route::post('store', [OrderController::class, 'store'])->name('user_order_store');
+        Route::get('edit/{id}', [OrderController::class, 'edit'])->name('user_order_edit');
+        Route::post('update/{id}', [OrderController::class, 'update'])->name('user_order_update');
+        Route::get('delete/{id}', [OrderController::class, 'destroy'])->name('user_order_delete');
+        Route::get('show', [OrderController::class, 'show'])->name('user_order_show');
     });
 });
 
