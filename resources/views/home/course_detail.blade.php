@@ -89,9 +89,8 @@
                                 <div class="post_content clearfix">
                                     <div class="post_descr">
                                         <p><b>{{$data->description}}</b></p>
-                                        <a href="{{route('buytocourse',['id'=>$rs->id])}}"
-                                           class="sc_button sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_small">SIGN
-                                            IN COURSE</a>
+                                        <a href="{{route('user_order_add')}}"
+                                           class="sc_button sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_small">SIGN IN COURSE</a>
                                     </div>
                                 </div>
                             </article>
