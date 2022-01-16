@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="content_wrap">
-            <h1 class="page_title">@include('home.usermenu')</h1>
+            @include('home.usermenu')
         </div>
     </div>
     <div class="page_content_wrap">

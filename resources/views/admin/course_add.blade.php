@@ -64,7 +64,7 @@
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label>Month</label>
-                                                <input type="number" name="month" value="1" class="form-control">
+                                                <input type="number" name="month" value="1"  max="12" class="form-control">
                                             </div>
                                             <div class="form-group col-md-6">
                                                 <label>Image</label>

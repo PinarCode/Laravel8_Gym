@@ -1,8 +1,8 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" style="width: fit-content"><b>User Panel</b></a>
-    <br><hr><br>
-    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <h5 style="text-align: center"><b>User Panel</b></h5>
+    <hr><br>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="text-align: center">
         <div class="navbar-nav">
             <a class="nav-item nav-link active" href="{{route('myprofile')}}"><i class="icon-user"></i> MY PROFILE &nbsp;&nbsp;&nbsp;</a>
             <a class="nav-item nav-link" href="#"><i class="icon-sporting"></i> MY ORDERS &nbsp;&nbsp;&nbsp;</a>

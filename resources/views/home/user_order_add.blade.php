@@ -25,40 +25,54 @@
                         <div class="row">
 
                             <div class="columns_wrap sc_columns columns_nofluid sc_columns_count_3">
-                                <div class="column-2_3 sc_column_item sc_column_item_1 odd first">
+                                <div class="column-1_2 sc_column_item sc_column_item_1 odd first">
                                     <div class="sc_price_block sc_price_block_style_1">
-                                        <form class="contact_1" method="post" action="include/contact-form.php">
+                                        <form class="contact_1" action="{{route('user_order_store')}}" method="post">
+                                            @csrf
                                             <div class="sc_contact_form_info"><br>
+                                                <h6 class="sc_title sc_title_regular">&nbsp;&nbsp;&nbsp;<b>ORDER DETAILS</b></h6>
+                                                <div class="sc_line style_3 sc_line_style_double"> </div><br>
                                                 <div class="sc_contact_form_item sc_contact_form_field label_over">
-                                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="color: black"><b>Name: </b></label></div><br>
-                                                    <input class="column-9_10" type="text" name="name" id="contact_form_username" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                    <input class="column-9_10" type="text" name="name" value="{{ Auth::user()->name }}" placeholder="Name & Surname" id="contact_form_username" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
                                                 </div><br>
                                                 <div class="sc_contact_form_item sc_contact_form_field label_over">
-                                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="color: black"><b>Email: </b></label></div><br>
-                                                    <input class="column-9_10" type="text" name="email" id="contact_form_email" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                    <input class="column-9_10" type="text" name="email" value="{{ Auth::user()->email }}" placeholder="E mail" id="contact_form_email" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
                                                 </div><br>
                                                 <div class="sc_contact_form_item sc_contact_form_field label_over">
-                                                    <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="color: black"><b>Subject: </b></label></div><br>
-                                                    <input class="column-9_10" type="text" name="subject" id="contact_form_subj" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                    <input class="column-9_10" type="text" name="address" value="{{ Auth::user()->address }}" placeholder="Address" id="contact_form_subj" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
                                                 </div><br>
+                                                <div class="sc_contact_form_item sc_contact_form_field label_over">
+                                                    <input class="column-9_10" type="text" name="phone" value="{{ Auth::user()->phone }}" placeholder="Phone Number" id="contact_form_subj" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                </div><br>
+                                                <div class="sc_contact_form_item sc_contact_form_field label_over">
+                                                    <input class="column-9_10" type="date" name="startDate" value=" " placeholder="Start Date" id="contact_form_subj" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                </div><br>
+                                                <div class="sc_contact_form_item sc_contact_form_field label_over">
+                                                    <input class="column-9_10" type="date" name="finishDate" value=" " placeholder="Finish Date" id="contact_form_subj" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                </div><br>
+                                            </div>
+                                            <div>
+                                                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="submit" class="sc_button sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_small">Complete Payment Process</button>
                                             </div>
                                         </form>
                                     </div>
                                 </div>
-                                <div class="column-1_3 sc_column_item sc_column_item_2 even">
+                                <div class="column-1_2 sc_column_item sc_column_item_2 even">
                                     <div class="sc_price_block sc_price_block_style_2 marked">
                                         <div class="sc_contact_form_info"><br>
+                                            <h6 class="sc_title sc_title_regular">&nbsp;&nbsp;&nbsp;<b>PAYMENT DETAILS </b></h6>
+                                            <div class="sc_line style_3 sc_line_style_double"> </div><br>
                                             <div class="sc_contact_form_item sc_contact_form_field label_over">
-                                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="color: black"><b>Name: </b></label></div><br>
-                                                <input class="column-9_10" type="text" name="name" id="contact_form_username" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                <input class="column-9_10" type="text" name="cardname" placeholder="Card Name & Surname" value="{{ Auth::user()->name }}" id="contact_form_username" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
                                             </div><br>
                                             <div class="sc_contact_form_item sc_contact_form_field label_over">
-                                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="color: black"><b>Email: </b></label></div><br>
-                                                <input class="column-9_10" type="text" name="email" id="contact_form_email" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                <input class="column-9_10" type="number" name="cardnumber" placeholder="Card Number" id="contact_form_email" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
                                             </div><br>
                                             <div class="sc_contact_form_item sc_contact_form_field label_over">
-                                                <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label style="color: black"><b>Subject: </b></label></div><br>
-                                                <input class="column-9_10" type="text" name="subject" id="contact_form_subj" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                                <input class="column-9_10" type="text" name="dates" placeholder="Valid Dates mm/yy" id="contact_form_subj" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
+                                            </div><br>
+                                            <div class="sc_contact_form_item sc_contact_form_field label_over">
+                                                <input class="column-9_10" type="text" name="key" placeholder="Secret number" id="contact_form_subj" style="outline: none !important;border-color: black;box-shadow: 0 0 10px black;margin-left: 30px">
                                             </div><br>
                                         </div>
                                     </div>

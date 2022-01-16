@@ -153,14 +153,35 @@
                                                             $countreview = \App\Http\Controllers\HomeController::countreview($rs->id);
                                                         @endphp
                                                         <div class="reviews_stars_wrap">
-                                                            <div class="reviews_stars_bg">
-                                                                <i class="reviews_star @if ($avgrev<1) -o empty @endif"></i>
-                                                                <i class="reviews_star @if ($avgrev<2) -o empty @endif"></i>
-                                                                <i class="reviews_star @if ($avgrev<3) -o empty @endif"></i>
-                                                                <i class="reviews_star @if ($avgrev<4) -o empty @endif"></i>
-                                                                <i class="reviews_star @if ($avgrev<5) -o empty @endif"></i>
-                                                                <i>({{$countreview}})</i>
-                                                            </div>
+                                                            @if ($avgrev>=1)
+                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                            @else
+                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                            @endif
+
+                                                            @if ($avgrev>=2)
+                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                            @else
+                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                            @endif
+
+                                                            @if ($avgrev>=3)
+                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                            @else
+                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                            @endif
+
+                                                            @if ($avgrev>=4)
+                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                            @else
+                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                            @endif
+
+                                                            @if ($avgrev>=5)
+                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                            @else
+                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                            @endif
                                                         </div>
                                                         <div class="reviews_value"><a href="#sc_tab_14_3">{{$countreview}} Review(s) {{$avgrev}} / Add Review</a></div>
                                                     </div>

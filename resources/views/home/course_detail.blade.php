@@ -66,16 +66,40 @@
                                                     $avgrev = \App\Http\Controllers\HomeController::avrgreview($data->id);
                                                     $countreview = \App\Http\Controllers\HomeController::countreview($data->id);
                                                 @endphp
+
                                                 <div class="reviews_stars_wrap">
-                                                    <div class="reviews_stars_bg">
-                                                        <i class="reviews_star @if ($avgrev<1) -o empty @endif"></i>
-                                                        <i class="reviews_star @if ($avgrev<2) -o empty @endif"></i>
-                                                        <i class="reviews_star @if ($avgrev<3) -o empty @endif"></i>
-                                                        <i class="reviews_star @if ($avgrev<4) -o empty @endif"></i>
-                                                        <i class="reviews_star @if ($avgrev<5) -o empty @endif"></i>
-                                                    </div>
+                                                    @if ($avgrev>=1)
+                                                        <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                    @else
+                                                        <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                    @endif
+
+                                                    @if ($avgrev>=2)
+                                                        <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                    @else
+                                                        <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                    @endif
+
+                                                    @if ($avgrev>=3)
+                                                        <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                    @else
+                                                        <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                    @endif
+
+                                                    @if ($avgrev>=4)
+                                                        <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                    @else
+                                                        <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                    @endif
+
+                                                    @if ($avgrev>=5)
+                                                        <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                    @else
+                                                        <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                    @endif
                                                 </div>
-                                                <div class="reviews_value"><a href="#sc_tab_14_3">{{$countreview}} Review(s) {{$avgrev}} / Add Review</a></div>
+                                                <div class="reviews_value"><a href="#sc_tab_14_3">{{$countreview}}
+                                                        Review(s) {{$avgrev}} / Add Review</a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -90,7 +114,8 @@
                                     <div class="post_descr">
                                         <p><b>{{$data->description}}</b></p>
                                         <a href="{{route('user_order_add')}}"
-                                           class="sc_button sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_small">SIGN IN COURSE</a>
+                                           class="sc_button sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_small">SIGN
+                                            IN COURSE</a>
                                     </div>
                                 </div>
                             </article>
@@ -100,13 +125,15 @@
                                     <div class="sc_tabs sc_tabs_style_1" data-active="0">
                                         <ul class="sc_tabs_titles">
                                             <li class="sc_tabs_title first">
-                                                <a href="#sc_tab_14_1" class="theme_button" id="sc_tab_14_1_tab">DETAIL</a>
+                                                <a href="#sc_tab_14_1" class="theme_button"
+                                                   id="sc_tab_14_1_tab">DETAIL</a>
                                             </li>
                                             <li class="sc_tabs_title">
                                                 <a href="#sc_tab_14_2" class="theme_button" id="sc_tab_14_2_tab">DESCRIPTION</a>
                                             </li>
                                             <li class="sc_tabs_title last">
-                                                <a href="#sc_tab_14_3" class="theme_button" id="sc_tab_14_3_tab">REVIEWS ({{ $countreview }})</a>
+                                                <a href="#sc_tab_14_3" class="theme_button" id="sc_tab_14_3_tab">REVIEWS
+                                                    ({{ $countreview }})</a>
                                             </li>
                                         </ul>
                                         <div id="sc_tab_14_1" class="sc_tabs_content odd first">
@@ -121,43 +148,74 @@
                                                     <div class="row">
                                                         <div class="comments_wrap">
                                                             @foreach($reviews as $rs)
-                                                            <div id="comments" class="comments_list_wrap">
-                                                                <div class="comments_list">
-                                                                    <div class="comment even thread-even depth-1 comment_item">
-                                                                        <div class="comment_content">
-                                                                            <div class="comment_info">
-                                                                                <span class="comment_author">{{$rs->name}}</span>
-                                                                                <span class="comment_date">
-                                                                                    <span class="comment_date_value">{{$rs->created_at}}</span>
+                                                                <div id="comments" class="comments_list_wrap">
+                                                                    <div class="comments_list">
+                                                                        <div
+                                                                            class="comment even thread-even depth-1 comment_item">
+                                                                            <div class="comment_content">
+                                                                                <div class="comment_info">
+                                                                                    <span
+                                                                                        class="comment_author">{{$rs->name}}</span>
+                                                                                    <span class="comment_date">
+                                                                                    <span
+                                                                                        class="comment_date_value">{{$rs->created_at}}</span>
                                                                                 </span>
-                                                                                <div class="reviews_stars_bg">
-                                                                                    <i class="reviews_star @if ($rs->rate<1) -o empty @endif"></i>
-                                                                                    <i class="reviews_star @if ($rs->rate<2) -o empty @endif"></i>
-                                                                                    <i class="reviews_star @if ($rs->rate<3) -o empty @endif"></i>
-                                                                                    <i class="reviews_star @if ($rs->rate<4) -o empty @endif"></i>
-                                                                                    <i class="reviews_star @if ($rs->rate<5) -o empty @endif"></i>
+                                                                                    <div class="reviews_stars_wrap">
+                                                                                        @if ($rs->rate>=1)
+                                                                                            <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                                                        @else
+                                                                                            <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                                                        @endif
+
+                                                                                        @if ($rs->rate>=2)
+                                                                                            <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                                                        @else
+                                                                                            <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                                                        @endif
+
+                                                                                        @if ($rs->rate>=3)
+                                                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                                                            @else
+                                                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                                                        @endif
+
+                                                                                        @if ($rs->rate>=4)
+                                                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                                                            @else
+                                                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                                                        @endif
+
+                                                                                        @if ($rs->rate>=5)
+                                                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
+                                                                                            @else
+                                                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
+                                                                                        @endif
+                                                                                    </div>
                                                                                 </div>
-                                                                            </div>
-                                                                            <div class="comment_text_wrap">
-                                                                                <div class="comment_text">
-                                                                                    <strong>{{$rs->subject}}</strong>
-                                                                                    <p>{{$rs->review}}</p>
+                                                                                <div class="comment_text_wrap">
+                                                                                    <div class="comment_text">
+                                                                                        <strong>{{$rs->subject}}</strong>
+                                                                                        <p>{{$rs->review}}</p>
+                                                                                    </div>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
+                                                                    <div class="comments_pagination">
+                                                                    </div>
                                                                 </div>
-                                                                <div class="comments_pagination">
-                                                                </div>
-                                                            </div>
                                                             @endforeach
                                                             <div class="comments_form_wrap">
-                                                                <h4 class="section_title comments_form_title">Write Your Review</h4>
+                                                                <h4 class="section_title comments_form_title">Write Your
+                                                                    Review</h4>
                                                                 <div class="comments_form">
                                                                     <div id="respond" class="comment-respond">
-                                                                        <h3 id="reply-title" class="comment-reply-title">
+                                                                        <h3 id="reply-title"
+                                                                            class="comment-reply-title">
                                                                             <small>
-                                                                                <a rel="nofollow" id="cancel-comment-reply-link" href="#respond">Cancel reply</a>
+                                                                                <a rel="nofollow"
+                                                                                   id="cancel-comment-reply-link"
+                                                                                   href="#respond">Cancel reply</a>
                                                                             </small>
                                                                         </h3>
                                                                         @livewire('review',['id'=>$data->id])

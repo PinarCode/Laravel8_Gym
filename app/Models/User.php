@@ -22,7 +22,7 @@ class User extends Authenticatable
         return $this->hasMany(Review::class);
     }
 
-    public function orders(){
+    public function order(){
         return $this->hasMany(Order::class);
     }
 

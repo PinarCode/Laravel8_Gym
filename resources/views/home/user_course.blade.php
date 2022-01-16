@@ -14,7 +14,7 @@
             </div>
         </div>
         <div class="content_wrap">
-            <h1 class="page_title">@include('home.usermenu')</h1>
+            @include('home.usermenu')
         </div>
     </div>
     <div class="page_content_wrap">
@@ -60,11 +60,11 @@
                                                                     <td>{{$rs->month}}</td>
                                                                     <td>
                                                                         @if($rs->image)
-                                                                            <img src="{{ Storage::url($rs->image)}}" height="30" alt="">
+                                                                            <img src="{{ Storage::url($rs->image)}}" style="height: 100px" alt="">
                                                                         @endif
                                                                     </td>
                                                                     <td><a href="{{route('user_image_add',['course_id'=>$rs->id])}}" onclick="return !window.open(this.href, '', 'top=50 left=100 widht=1100 height=700')">
-                                                                            <img src="{{ asset('assets') }}/admin/images/gallery.png" height="30"></a>
+                                                                            <img src="{{ asset('assets') }}/admin/images/gallery.png" style="height: 30px"></a>
                                                                     </td>
                                                                     <td>{{$rs->status}}</td>
                                                                     <td><a href="{{route('user_course_edit',['id'=>$rs->id])}}"><img src="{{ asset('assets') }}/admin/icons/feather/edit.svg"></a></td>
