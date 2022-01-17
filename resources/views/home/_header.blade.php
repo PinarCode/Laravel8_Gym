@@ -85,9 +85,6 @@
                             <li><a href="{{route('myprofile')}}"><i class="icon-user"></i> My Account</a></li>
                             <li><a href="{{route('myreviews')}}"> <i class="icon-comment"></i> My Review</a></li>
                             <li><a href="{{route('user_courses')}}"> <i class="icon-sporting"></i> My Courses</a></li>
-                            <li><a href="#"> <i class="icon-heart-2"></i> My WishList</a></li>
-                            <li><a href="#"><i class="icon-file73"></i> Compare</a></li>
-                            <li><a href="#"> <i class="icon-check-2"></i> Checkout</a></li>
                             <li><a href="{{route('logout')}}"><i class="revicon-logout"></i> Logout</a></li>
                         </ul>
                     </li>
