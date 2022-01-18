@@ -26,6 +26,7 @@
                                     <a href="index.html"><img src="{{ asset('assets') }}/admin/images/logo-full.png" alt=""></a>
                                 </div>
                                 <h4 class="text-center mb-4 text-white">Sign in your account</h4>
+                                @include('home.message')
                                 <form action="{{ route('admin_logincheck') }}" method="post">
                                     @csrf
                                     <div class="form-group">

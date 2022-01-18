@@ -10,7 +10,7 @@
             <div class="content_wrap">
                 <a class="breadcrumbs_item home" href="{{route('homepage')}}">Home</a>
                 <span class="breadcrumbs_delimiter"></span>
-                <span class="breadcrumbs_item current">My Account</span>
+                <span class="breadcrumbs_item current">My Courses</span>
             </div>
         </div>
         <div class="content_wrap">

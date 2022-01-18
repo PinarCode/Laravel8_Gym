@@ -16,7 +16,7 @@
         <div class="content_wrap">
             @include('home.usermenu')
         </div>
-    </div>
+    </div><br>
     <div class="page_content_wrap">
         <div class="content_wrap">
             <div class="content">

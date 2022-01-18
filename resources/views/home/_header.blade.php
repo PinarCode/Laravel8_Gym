@@ -85,6 +85,7 @@
                             <li><a href="{{route('myprofile')}}"><i class="icon-user"></i> My Account</a></li>
                             <li><a href="{{route('myreviews')}}"> <i class="icon-comment"></i> My Review</a></li>
                             <li><a href="{{route('user_courses')}}"> <i class="icon-sporting"></i> My Courses</a></li>
+                            <li><a href="{{route('user_order')}}"><i class="icon-shop"></i> My Orders</a></li>
                             <li><a href="{{route('logout')}}"><i class="revicon-logout"></i> Logout</a></li>
                         </ul>
                     </li>

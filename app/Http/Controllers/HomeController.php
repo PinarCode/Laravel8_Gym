@@ -7,6 +7,7 @@ use App\Models\Course;
 use App\Models\Faq;
 use App\Models\Image;
 use App\Models\Message;
+use App\Models\Order;
 use App\Models\Review;
 use App\Models\Setting;
 use Illuminate\Http\Request;
@@ -56,11 +57,25 @@ class HomeController extends Controller
         return  view('home.course_detail',['data'=>$data,'datalist'=>$datalist,'reviews'=>$reviews]);
     }
 
-    public function buytocourse($id){
-        echo "Buy to course <br>";
-        $data = Course::find($id);
-        print_r($data);
-        exit();
+    public function buycourse(Request $request,$id)
+    {
+        $data = new Order;
+
+        $data->user_id = Auth::id();
+        $course = Course::find($id);
+        $data->course_id=$id;
+        $data->startDate = $request->input('startDate');
+        $data->finishDate = $request->input('finishDate');
+        $data->IP = $_SERVER['REMOTE_ADDR'];
+        $data->price = $data->course->price;
+        $data->total = $data->course->price;
+        $data->payment = $data->course->price;
+
+
+
+        $data->save();
+
+        return redirect()->route('course',['id'=>$course->id])->with('success','Siparişiniz Oluşturuldu');
     }
 
     public function getcourse(Request $request){

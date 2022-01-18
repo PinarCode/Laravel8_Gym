@@ -145,48 +145,6 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="post_rating reviews_summary blog_reviews">
-                                                <div class="criteria_summary criteria_row">
-                                                    <div class="reviews_stars reviews_style_stars" data-mark="92">
-                                                        @php
-                                                            $avgrev = \App\Http\Controllers\HomeController::avrgreview($rs->id);
-                                                            $countreview = \App\Http\Controllers\HomeController::countreview($rs->id);
-                                                        @endphp
-                                                        <div class="reviews_stars_wrap">
-                                                            @if ($avgrev>=1)
-                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
-                                                            @else
-                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
-                                                            @endif
-
-                                                            @if ($avgrev>=2)
-                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
-                                                            @else
-                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
-                                                            @endif
-
-                                                            @if ($avgrev>=3)
-                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
-                                                            @else
-                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
-                                                            @endif
-
-                                                            @if ($avgrev>=4)
-                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
-                                                            @else
-                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
-                                                            @endif
-
-                                                            @if ($avgrev>=5)
-                                                                <i class="reviews_stars_hover"><span class="reviews_star"></span></i>
-                                                            @else
-                                                                <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
-                                                            @endif
-                                                        </div>
-                                                        <div class="reviews_value"><a href="#sc_tab_14_3">{{$countreview}} Review(s) {{$avgrev}} / Add Review</a></div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class="sc_team_item_info">
                                                 <h6 class="sc_team_item_title">
                                                     <a href="{{route('course',['id'=>$rs->id])}}">{{$rs->title}}</a>
@@ -228,27 +186,6 @@
                                                                     </a>
                                                                 </div>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="post_rating reviews_summary blog_reviews">
-                                                    <div class="criteria_summary criteria_row">
-                                                        <div class="reviews_stars reviews_style_stars" data-mark="92">
-                                                            @php
-                                                                $avgrev = \App\Http\Controllers\HomeController::avrgreview($rs->id);
-                                                                $countreview = \App\Http\Controllers\HomeController::countreview($rs->id);
-                                                            @endphp
-                                                            <div class="reviews_stars_wrap">
-                                                                <div class="reviews_stars_bg">
-                                                                    <i class="reviews_star @if ($avgrev<1) -o empty @endif"></i>
-                                                                    <i class="reviews_star @if ($avgrev<2) -o empty @endif"></i>
-                                                                    <i class="reviews_star @if ($avgrev<3) -o empty @endif"></i>
-                                                                    <i class="reviews_star @if ($avgrev<4) -o empty @endif"></i>
-                                                                    <i class="reviews_star @if ($avgrev<5) -o empty @endif"></i>
-                                                                    <i>({{$countreview}})</i>
-                                                                </div>
-                                                            </div>
-                                                            <div class="reviews_value"><a href="#sc_tab_14_3">{{$countreview}} Review(s) {{$avgrev}} / Add Review</a></div>
                                                         </div>
                                                     </div>
                                                 </div>

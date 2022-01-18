@@ -34,6 +34,17 @@
                     <span class="nav-text">FAQ</span>
                 </a>
             </li>
+            <li><a class="has-arrow ai-icon" href="#" aria-expanded="false">
+                    <i class="flaticon-381-calendar-6"></i>
+                    <span class="nav-text">Orders</span>
+                </a>
+                <ul aria-expanded="false">
+                    <li><a href="{{route('admin_order')}}">All Courses</a></li>
+                    <li><a href="{{route('admin_order')}}">New Courses</a></li>
+                    <li><a href="workout-statistic.html">Accepted Courses</a></li>
+                    <li><a href="workoutplan.html">Completed Courses</a></li>
+                </ul>
+            </li>
             <li>
                 <a class="ai-icon" href="{{route('admin_setting')}}" aria-expanded="false">
                     <i class="flaticon-381-settings-2"></i>
