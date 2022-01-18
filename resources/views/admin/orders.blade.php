@@ -32,9 +32,10 @@
                                                 <th>START DATE</th>
                                                 <th>FINISH DATE</th>
                                                 <th>STATUS</th>
+                                                <th colspan="3">ACTIONS</th>
                                             </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody style="background-color: white">
                                             @foreach ($datalist as $rs)
                                                 <tr style="color: black; background-color: snow">
                                                     <td><strong>{{$rs->id}}</strong></td>
@@ -47,6 +48,9 @@
                                                     <td>{{$rs->created_at}}</td>
                                                     <td>{{$rs->finishDate}}</td>
                                                     <td>{{$rs->status}}</td>
+                                                    <td><a href="{{route('admin_order_show',['id'=>$rs->id])}}" onclick="return !window.open(this.href, '', 'top=50 left=100 widht=1100 height=700')">
+                                                            <img src="{{ asset('assets') }}/admin/icons/feather/edit.svg"></a>
+                                                    </td>
                                                 </tr>
                                             @endforeach
                                             </tbody>

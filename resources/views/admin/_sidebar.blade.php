@@ -39,10 +39,10 @@
                     <span class="nav-text">Orders</span>
                 </a>
                 <ul aria-expanded="false">
-                    <li><a href="{{route('admin_order')}}">All Courses</a></li>
-                    <li><a href="{{route('admin_order')}}">New Courses</a></li>
-                    <li><a href="workout-statistic.html">Accepted Courses</a></li>
-                    <li><a href="workoutplan.html">Completed Courses</a></li>
+                    <li><a href="{{route('admin_order')}}">All Orders</a></li>
+                    <li><a href="{{route('admin_order')}}">New Orders</a></li>
+                    <li><a href="workout-statistic.html">Accepted Orders</a></li>
+                    <li><a href="workoutplan.html">Completed Orders</a></li>
                 </ul>
             </li>
             <li>

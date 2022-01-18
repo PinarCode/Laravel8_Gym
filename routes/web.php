@@ -114,7 +114,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
            Route::get('edit/{id}', [AdminOrderController::class, 'edit'])->name('admin_order_edit');
            Route::post('update/{id}', [AdminOrderController::class, 'update'])->name('admin_order_update');
            Route::get('delete/{id}', [AdminOrderController::class, 'destroy'])->name('admin_order_delete');
-           Route::get('show', [AdminOrderController::class, 'show'])->name('admin_order_show');
+           Route::get('show/{id}', [AdminOrderController::class, 'show'])->name('admin_order_show');
        });
    });
 
