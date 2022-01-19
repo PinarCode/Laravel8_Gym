@@ -630,7 +630,7 @@
             <div class="collapse navbar-collapse justify-content-between">
                 <div class="header-left">
                     <div class="dashboard_bar">
-                        Dashboard
+                        @include('home.message')
                     </div>
                 </div>
                 <ul class="navbar-nav header-right">
@@ -816,7 +816,9 @@
                     </li>
                     <li class="nav-item dropdown header-profile">
                         <a class="nav-link" href="javascript:void(0)" role="button" data-toggle="dropdown">
-                            <img src="{{ asset('assets') }}/admin/images/profile/me.jpg" width="20" alt=""/>
+                            @if(Auth::user()->profile_photo_path)
+                                <img src="{{Storage::url(Auth::user()->profile_photo_path)}}" class="user-img" alt="user avatar">
+                            @endif
                             <div class="header-info">
                                 @auth
                                 <span class="text-black"><strong>{{Auth::user()->name}}</strong></span>

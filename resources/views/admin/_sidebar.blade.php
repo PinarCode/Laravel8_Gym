@@ -40,10 +40,16 @@
                 </a>
                 <ul aria-expanded="false">
                     <li><a href="{{route('admin_order')}}">All Orders</a></li>
-                    <li><a href="{{route('admin_order')}}">New Orders</a></li>
-                    <li><a href="workout-statistic.html">Accepted Orders</a></li>
-                    <li><a href="workoutplan.html">Completed Orders</a></li>
+                    <li><a href="{{route('admin_order_list',['status'=>'new'])}}">New Orders</a></li>
+                    <li><a href="{{route('admin_order_list',['status'=>'accepted'])}}">Accepted Orders</a></li>
+                    <li><a href="{{route('admin_order_list',['status'=>'canceled'])}}">Canceled Orders</a></li>
+                    <li><a href="{{route('admin_order_list',['status'=>'completed'])}}">Completed Orders</a></li>
                 </ul>
+            </li>
+            <li><a href="{{route('admin_users')}}" class="ai-icon" aria-expanded="false">
+                    <i class="flaticon-381-user-9"></i>
+                    <span class="nav-text">USERS</span>
+                </a>
             </li>
             <li>
                 <a class="ai-icon" href="{{route('admin_setting')}}" aria-expanded="false">
