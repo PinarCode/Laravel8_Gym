@@ -61,7 +61,7 @@
                                 <div class="post_info">
                                     <div class="post_rating reviews_summary blog_reviews">
                                         <div class="criteria_summary criteria_row">
-                                            <div class="reviews_stars reviews_style_stars" data-mark="92">
+                                            <div class="reviews_stars reviews_style_stars">
                                                 @php
                                                     $avgrev = \App\Http\Controllers\HomeController::avrgreview($data->id);
                                                     $countreview = \App\Http\Controllers\HomeController::countreview($data->id);
@@ -98,8 +98,8 @@
                                                         <i class="reviews_stars_bg"><span class="reviews_star"></span></i>
                                                     @endif
                                                 </div>
-                                                <div class="reviews_value"><a href="#sc_tab_14_3">{{$countreview}}
-                                                        Review(s) {{$avgrev}} / Add Review</a></div>
+                                                <div class="reviews_value">{{$countreview}}
+                                                        Review(s) {{$avgrev}} / Add Review</div>
                                             </div>
                                         </div>
                                     </div>
@@ -223,8 +223,7 @@
                                                             @foreach($reviews as $rs)
                                                                 <div id="comments" class="comments_list_wrap">
                                                                     <div class="comments_list">
-                                                                        <div
-                                                                            class="comment even thread-even depth-1 comment_item">
+                                                                        <div class="comment even thread-even depth-1 comment_item">
                                                                             <div class="comment_content">
                                                                                 <div class="comment_info">
                                                                                     <span

@@ -35,11 +35,16 @@
                                                 <th colspan="3">ACTIONS</th>
                                             </tr>
                                             </thead>
-                                            <tbody style="background-color: white">
+                                            <tbody>
                                             @foreach ($datalist as $rs)
-                                                <tr style="color: black; background-color: snow">
+                                                <tr style="color: black; background-color: white">
                                                     <td><strong>{{$rs->id}}</strong></td>
-                                                    <td>{{$rs->user->name}}</td>
+                                                    <td>
+                                                        <a href="{{route('admin_user_show',['id'=>$rs->user->id])}}"
+                                                           onclick="return !window.open(this.href, '', 'top=20 left=50 width=800 height=700')">
+
+                                                            {{$rs->user->name}}</a>
+                                                    </td>
                                                     <td>{{$rs->user->phone}}</td>
                                                     <td>{{$rs->user->email}}</td>
                                                     <td>{{$rs->user->address}}</td>

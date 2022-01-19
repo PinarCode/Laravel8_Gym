@@ -75,23 +75,13 @@
             <div class="menu">
                 <ul id="menu_foot" class="menu_foot_nav">
                     <li class="menu-item">
-                        <a href="#">
-                            <span>Events</span>
+                        <a href="{{route('faq')}}">
+                            <span>FAQ</span>
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">
-                            <span>Trainers</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">
-                            <span>Features</span>
-                        </a>
-                    </li>
-                    <li class="menu-item">
-                        <a href="#">
-                            <span>Categories</span>
+                        <a href="{{route('references')}}">
+                            <span>References</span>
                         </a>
                     </li>
                     <li class="menu-item">
@@ -100,7 +90,7 @@
                         </a>
                     </li>
                     <li class="menu-item">
-                        <a href="#">
+                        <a href="{{route('contact')}}">
                             <span>Contact Us</span>
                         </a>
                     </li>

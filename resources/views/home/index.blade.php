@@ -250,19 +250,19 @@
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://tr-tr.facebook.com/" target="_blank"
                                                                    class="social_icons social_facebook icons">
                                                                     <span class="icon-facebook"></span>
                                                                 </a>
                                                             </div>
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://twitter.com/?lang=tr" target="_blank"
                                                                    class="social_icons social_twitter icons">
                                                                     <span class="icon-twitter"></span>
                                                                 </a>
                                                             </div>
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://www.google.com/" target="_blank"
                                                                    class="social_icons social_gplus icons">
                                                                     <span class="icon-gplus"></span>
                                                                 </a>
@@ -288,19 +288,19 @@
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://tr-tr.facebook.com/" target="_blank"
                                                                    class="social_icons social_facebook icons">
                                                                     <span class="icon-facebook"></span>
                                                                 </a>
                                                             </div>
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://twitter.com/?lang=tr" target="_blank"
                                                                    class="social_icons social_twitter icons">
                                                                     <span class="icon-twitter"></span>
                                                                 </a>
                                                             </div>
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://www.google.com/" target="_blank"
                                                                    class="social_icons social_gplus icons">
                                                                     <span class="icon-gplus"></span>
                                                                 </a>
@@ -326,19 +326,19 @@
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://tr-tr.facebook.com/" target="_blank"
                                                                    class="social_icons social_facebook icons">
                                                                     <span class="icon-facebook"></span>
                                                                 </a>
                                                             </div>
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://twitter.com/?lang=tr" target="_blank"
                                                                    class="social_icons social_twitter icons">
                                                                     <span class="icon-twitter"></span>
                                                                 </a>
                                                             </div>
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://www.google.com/" target="_blank"
                                                                    class="social_icons social_gplus icons">
                                                                     <span class="icon-gplus"></span>
                                                                 </a>
@@ -364,19 +364,19 @@
                                                     <div class="sc_team_item_socials">
                                                         <div class="sc_socials sc_socials_size_small">
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://tr-tr.facebook.com/" target="_blank"
                                                                    class="social_icons social_facebook icons">
                                                                     <span class="icon-facebook"></span>
                                                                 </a>
                                                             </div>
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://twitter.com/?lang=tr" target="_blank"
                                                                    class="social_icons social_twitter icons">
                                                                     <span class="icon-twitter"></span>
                                                                 </a>
                                                             </div>
                                                             <div class="sc_socials_item">
-                                                                <a href="#" target="_blank"
+                                                                <a href="https://www.google.com/" target="_blank"
                                                                    class="social_icons social_gplus icons">
                                                                     <span class="icon-gplus"></span>
                                                                 </a>
@@ -413,163 +413,6 @@
                             <a href="#"
                                class="sc_button  sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_large  sc_button_iconed inherit">SEE
                                 PLANS AND PRICING</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="">
-        <div class="container">
-            <div class="row">
-                <div class="sc_section bg_tint_none">
-                    <div class="sc_content content_wrap">
-                        <div class="sc_section bg_tint_none aligncenter">
-                            <h2 class="sc_title style_1">WHAT OUR CLIENTS SAY ABOUT US</h2>
-                            <h5 class="sc_undertitle style_3">Check some of our client&#8217;s reviews</h5>
-                        </div>
-                        <div
-                            class="sc_testimonials sc_slider_swiper_off swiper-slider-container-off sc_slider_nopagination sc_slider_controls"
-                            data-interval="7000">
-                            <div class="sc_testimonials_grid columns_2">
-                                <div class="sc_testimonial_item_grid_wrapper">
-                                    <div class="sc_testimonial_item">
-                                        <div class="sc_testimonial_avatar_wrapper">
-                                            <div class="sc_testimonial_avatar">
-                                                <img alt="testimonial-4.jpg"
-                                                     src="{{ asset('assets') }}/images/110x110.png">
-                                            </div>
-                                        </div>
-                                        <div class="sc_testimonial_content_wrapper">
-                                            <div class="sc_testimonial_author">
-                                                <a href="#">Michal Smith</a>
-                                            </div>
-                                            <div class="sc_testimonial_content">
-                                                <p>I just want to express how grateful I am to my personal trainer.
-                                                    Thanks to his committment I&#8217;ve acheived so much I would have
-                                                    never imagined doing.</p>
-                                                <div class="sc_socials sc_socials_size_small">
-                                                    <div class="sc_socials_item">
-                                                        <a href="#" target="_blank"
-                                                           class="social_icons social_facebook icons">
-                                                            <span class="icon-facebook"></span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="sc_socials_item">
-                                                        <a href="#" target="_blank"
-                                                           class="social_icons social_twitter icons">
-                                                            <span class="icon-twitter"></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sc_testimonial_item_grid_wrapper">
-                                    <div class="sc_testimonial_item">
-                                        <div class="sc_testimonial_avatar_wrapper">
-                                            <div class="sc_testimonial_avatar">
-                                                <img alt="testimonial-1.jpg"
-                                                     src="{{ asset('assets') }}/images/110x110S.png">
-                                            </div>
-                                        </div>
-                                        <div class="sc_testimonial_content_wrapper">
-                                            <div class="sc_testimonial_author">
-                                                <a href="#">Samantha Anderson</a>
-                                            </div>
-                                            <div class="sc_testimonial_content">
-                                                <p>I did have some serious traumas on my knee and arm in the past. But
-                                                    after joining the Gym, I&#8221;ve started feeling so much better due
-                                                    to my regular workouts. </p>
-                                                <div class="sc_socials sc_socials_size_small">
-                                                    <div class="sc_socials_item">
-                                                        <a href="#" target="_blank"
-                                                           class="social_icons social_facebook icons">
-                                                            <span class="icon-facebook"></span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="sc_socials_item">
-                                                        <a href="#" target="_blank"
-                                                           class="social_icons social_twitter icons">
-                                                            <span class="icon-twitter"></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sc_testimonial_item_grid_wrapper">
-                                    <div class="sc_testimonial_item">
-                                        <div class="sc_testimonial_avatar_wrapper">
-                                            <div class="sc_testimonial_avatar">
-                                                <img alt="testimonial-3.jpg"
-                                                     src="{{ asset('assets') }}/images/110x110J.png">
-                                            </div>
-                                        </div>
-                                        <div class="sc_testimonial_content_wrapper">
-                                            <div class="sc_testimonial_author">
-                                                <a href="#">John Red</a>
-                                            </div>
-                                            <div class="sc_testimonial_content">
-                                                <p>Being health and fit is never a quick process, so I am still working
-                                                    on myself to achieve the state of perfection. Thanks to the Gym I
-                                                    will gain the forms of my dreams. </p>
-                                                <div class="sc_socials sc_socials_size_small">
-                                                    <div class="sc_socials_item">
-                                                        <a href="#" target="_blank"
-                                                           class="social_icons social_facebook icons">
-                                                            <span class="icon-facebook"></span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="sc_socials_item">
-                                                        <a href="#" target="_blank"
-                                                           class="social_icons social_twitter icons">
-                                                            <span class="icon-twitter"></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="sc_testimonial_item_grid_wrapper">
-                                    <div class="sc_testimonial_item">
-                                        <div class="sc_testimonial_avatar_wrapper">
-                                            <div class="sc_testimonial_avatar">
-                                                <img alt="testimonial-2.jpg"
-                                                     src="{{ asset('assets') }}/images/110x110Sa.png">
-                                            </div>
-                                        </div>
-                                        <div class="sc_testimonial_content_wrapper">
-                                            <div class="sc_testimonial_author">
-                                                <a href="#">Sam Jefferson</a>
-                                            </div>
-                                            <div class="sc_testimonial_content">
-                                                <p>A dream becomes a goal when action is taken toward its achievement.
-                                                    Thanks to my awesome fitness trainer I&#8217;ve become more fit and
-                                                    healthy.</p>
-                                                <div class="sc_socials sc_socials_size_small">
-                                                    <div class="sc_socials_item">
-                                                        <a href="#" target="_blank"
-                                                           class="social_icons social_facebook icons">
-                                                            <span class="icon-facebook"></span>
-                                                        </a>
-                                                    </div>
-                                                    <div class="sc_socials_item">
-                                                        <a href="#" target="_blank"
-                                                           class="social_icons social_twitter icons">
-                                                            <span class="icon-twitter"></span>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
