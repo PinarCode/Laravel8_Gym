@@ -401,26 +401,7 @@
             </div>
         </div>
     </section>
-
     <section class="no_padding">
-        <div class="container">
-            <div class="row">
-                <div class="sc_section cascade bg_tint_dark">
-                    <div class="sc_content content_wrap">
-                        <div class="sc_section with_padding bg_tint_none aligncenter">
-                            <h5 class="sc_abovetitle style_2">Are you a Personal Trainer?</h5>
-                            <h1 class="sc_title style_2">WE HAVE ALL YOU NEED TO RUN YOUR BUSINESS</h1>
-                            <a href="#"
-                               class="sc_button  sc_button_square sc_button_style_border sc_button_bg_color3 sc_button_size_large  sc_button_iconed inherit">SEE
-                                PLANS AND PRICING</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="no_padding bg_image_13">
         <div class="container">
             <div class="row">
                 <div class="sc_section overlay_padding_off bg_tint_none">
@@ -431,114 +412,6 @@
                                     <div class="sc_content content_wrap">
                                         <div class="sc_section bg_tint_dark aligncenter">
                                             <h2 class="sc_title">JOIN THE GYM STYLE!</h2>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-                </div>
-                <div class="sc_section overlay_padding_off bg_tint_none">
-                    <div class="sc_section_overlay">
-                        <section class="grey_opacity_section">
-                            <div class="container">
-                                <div class="sc_section_content">
-                                    <div class="sc_content content_wrap">
-                                        <div class="sc_section bg_tint_dark aligncenter">
-                                            <h2 class="sc_title style_1">GET IN TOUCH</h2>
-                                            <h5 class="sc_undertitle style_4">Have a question for us?</h5>
-                                        </div>
-                                    </div>
-                                    <div class="sc_content content_wrap margin_top_middle">
-                                        <div
-                                            class="columns_wrap sc_columns columns_nofluid sc_columns_count_2 custom_columns">
-                                            <div class="column-1_2 sc_column_item sc_column_item_1 odd first">
-                                                <div class="bg_tint_dark">
-                                                    <div class="column-1_2">
-                                                        <p>
-                                                            <strong>OPERATING HOURS:</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                        <p>Monday to Friday 10:00 to 23:00.<br/>Saturdays 12:00 to
-                                                            00:00.<br/>Sundays 14:00 to 22:00.</p>
-                                                        <p>Closed on public holidays.</p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                        <p>
-                                                            <strong>ADDRESS:</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                            <p>{{$setting->address}}</p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                        <p>
-                                                            <strong>TELEPHONE:</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                        <p>{{$setting->phone}}</p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                        <p>
-                                                            <strong>FAX:</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                        <p>{{$setting->fax}}</p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                        <p>
-                                                            <strong>EMAIL:</strong>
-                                                        </p>
-                                                    </div>
-                                                    <div class="column-1_2">
-                                                        <p>{{$setting->email}}</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="column-1_2 sc_column_item sc_column_item_2 bg_tint_dark even">
-                                                <div class="sc_contact_form sc_contact_form_standard contact_form_1">
-                                                    <form class="contact_1" method="post"
-                                                          action="include/contact-form.php">
-                                                        <div class="sc_contact_form_info">
-                                                            <div
-                                                                class="sc_contact_form_item sc_contact_form_field label_over">
-                                                                <input type="text" name="name"
-                                                                       id="contact_form_username" placeholder="Name *">
-                                                            </div>
-                                                            <div
-                                                                class="sc_contact_form_item sc_contact_form_field label_over">
-                                                                <input type="text" name="email" id="contact_form_email"
-                                                                       placeholder="Email *">
-                                                            </div>
-                                                            <div
-                                                                class="sc_contact_form_item sc_contact_form_field label_over">
-                                                                <input type="text" name="subject" id="contact_form_subj"
-                                                                       placeholder="Subject *">
-                                                            </div>
-                                                        </div>
-                                                        <div
-                                                            class="message sc_contact_form_item sc_contact_form_message label_over">
-                                                            <div class="">
-                                                                <textarea id="contact_form_message" class="textAreaSize"
-                                                                          name="message"
-                                                                          placeholder="Message *"></textarea>
-                                                            </div>
-                                                        </div>
-                                                        <div class="sc_contact_form_item sc_contact_form_button">
-                                                            <div
-                                                                class="squareButton sc_button_size sc_button_style_global global">
-                                                                <button type="submit" name="contact_submit"
-                                                                        class="contact_form_submit">Send Message
-                                                                </button>
-                                                            </div>
-                                                        </div>
-                                                        <div class="result sc_infobox"></div>
-                                                    </form>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
                                 </div>

@@ -27,7 +27,7 @@
                                 <div class="form-row">
                                     <form action="{{route('admin_order_update', ['id'=>$data->id])}}" method="post">
                                         @csrf
-                                        <table class="table table-responsive-md">
+                                        <table class="table table-responsive-md" style="width:100%">
                                             <tr>
                                                 <th>ID</th>
                                                 <td><strong>{{$data->id}}</strong></td>
@@ -101,7 +101,7 @@
                                         </table>
                                     </form>
                                     <br><br>
-                                    <table class="table table-responsive-md">
+                                    <table class="table table-responsive-md" style="width:100%">
                                         <thead>
                                         <tr>
                                             <th>ID</th>

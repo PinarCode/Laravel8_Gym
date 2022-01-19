@@ -26,7 +26,7 @@
                                     <form action="{{route('admin_message_update', ['id'=>$data->id])}}" method="post" enctype="multipart/form-data">
                                         @csrf
                                         <div class="form-row">
-                                            <table class="table table-responsive-md">
+                                            <table class="table table-responsive-md" style="width:100%">
                                                 <tr>
                                                     <th>ID</th> <td><strong>{{$data->id}}</strong></td>
                                                 </tr>

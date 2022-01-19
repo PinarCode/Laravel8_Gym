@@ -48,7 +48,7 @@
             </li>
             <li><a href="{{route('admin_users')}}" class="ai-icon" aria-expanded="false">
                     <i class="flaticon-381-user-9"></i>
-                    <span class="nav-text">USERS</span>
+                    <span class="nav-text">Users</span>
                 </a>
             </li>
             <li>

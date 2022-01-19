@@ -24,12 +24,15 @@ class HomeController extends Controller
     }
 
     public static function countreview($id){
+
         return Review::where('course_id', $id)->count();
     }
 
     public static function avrgreview($id){
+
         return Review::where('course_id', $id)->average('rate');
     }
+
 
     public function index(){
 
@@ -49,6 +52,7 @@ class HomeController extends Controller
     }
 
     public function course($id){
+
         $data = Course::find($id);
         $datalist = Image::where('course_id',$id)->get();
         $reviews = Review::where('course_id',$id)->get();
